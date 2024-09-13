@@ -1,0 +1,64 @@
+/* || VARIABLES */
+
+:root {
+  /* || Colors */
+
+  --primary-color-light: #ececf3;
+  --primary-color-light-hover: #e3e2ee;
+  --primary-color-light-active: #c5c3db;
+  --primary-color-normal: #433d8b;
+  --primary-color-normal-hover: #322e68;
+  --primary-color-normal-active: #282553;
+  --primary-color-dark: #171531;
+
+  --secondary-color-normal: #205e17;
+  --secondary-color-normal-hover: #1a4b13;
+  --secondary-color-normal-active: #13380e;
+
+  --neutral-color-light: #fbfbf9;
+  --neutral-color-white: #ffffff;
+  --neutral-color-black: #000000;
+
+  /* || Font sizes */
+
+  --font-size-mobile-display: 3.5rem;
+
+  --font-size-mobile-h1: 2.25rem;
+  --font-size-mobile-h2: 2rem;
+  --font-size-mobile-h3: 1.5rem;
+  --font-size-mobile-h4: 1.25rem;
+  --font-size-mobile-h5: 1.125em;
+
+  --font-size-mobile-body-large: 1.25rem;
+  --font-size-mobile-body-medium: 1.125rem;
+  --font-size-mobile-body-small: 1rem;
+  --font-size-mobile-body-x-small: 0.875rem;
+
+  --font-size-desktop-display: 4rem;
+
+  --font-size-desktop-h1: 3.5rem;
+  --font-size-desktop-h2: 2.875rem;
+  --font-size-desktop-h3: 2.125rem;
+  --font-size-desktop-h4: 1.75rem;
+  --font-size-desktop-h5: 1.5rem;
+
+  --font-size-desktop-body-large: 1.5rem;
+  --font-size-desktop-body-medium: 1.25rem;
+  --font-size-desktop-body-small: 1.125rem;
+  --font-size-desktop-body-x-small: 1rem;
+
+  /* || Padding */
+
+  --padding-16: 1rem;
+  --padding-32: 2rem;
+  --padding-48: 3rem;
+  --padding-64: 4rem;
+
+  --padding-mobile-content: 2rem 1rem;
+  --padding-desktop-content: 4rem;
+
+  --padding-mobile-header: 0rem 1rem;
+  --padding-desktop-header: 0rem 4rem;
+
+  --padding-button: 1rem 2rem;
+}
