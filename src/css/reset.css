@@ -58,3 +58,8 @@ input {
   padding-block: 0px;
   padding-inline: 0px;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

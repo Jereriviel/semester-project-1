@@ -1,1 +1,141 @@
 /* || HOME */
+
+.home__hero {
+  background-image: url(../../assets/images/home_hero_600w.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: 100%;
+  min-height: 600px;
+  color: var(--neutral-color-light);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: var(--font-size-mobile-body-large);
+}
+
+.home__hero-content {
+  gap: 2rem;
+}
+
+.home__information-section {
+  background-color: var(--primary-color-light);
+}
+
+.home__information-section-content {
+  text-align: center;
+  gap: 2rem;
+  font-size: var(--font-size-mobile-body-medium);
+}
+
+.home__information-section section {
+  gap: 0.5rem;
+}
+
+.home__underlined a {
+  text-decoration: underline;
+}
+
+.home__special-events-section {
+  background-color: var(--neutral-color-light);
+}
+
+.home__special-events-section div {
+  gap: 2rem;
+}
+
+.home__special-events-section-content {
+  text-align: left;
+  gap: 2rem;
+  font-size: var(--font-size-mobile-body-small);
+}
+
+.home__special-events-section article {
+  max-width: 600px;
+}
+
+.home__young-stars-club-section {
+  justify-content: center;
+  background-image: url(../../assets/images/young-stars-club_600w.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: 100%;
+  min-height: 600px;
+  color: var(--neutral-color-light);
+  font-size: var(--font-size-mobile-body-medium);
+}
+
+.home__young-stars-club-content {
+  background-color: rgba(50, 46, 104, 0.8);
+  max-width: 92%;
+}
+
+.home__young-stars-club-content,
+.home__young-stars-club-content div {
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .home__hero {
+    background-image: url(../../assets/images/home_hero_2064w.jpg),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    font-size: var(--font-size-desktop-body-large);
+  }
+
+  .home__hero,
+  .home__hero h1 {
+    text-align: left;
+  }
+
+  .home__information-section-content {
+    font-size: var(--font-size-desktop-body-large);
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .home__special-events-section-content {
+    flex-direction: row;
+  }
+
+  .home__special-events-section-content article {
+    flex-basis: 33%;
+  }
+
+  .home__special-events-section article {
+    max-width: 400px;
+    min-width: 300px;
+  }
+
+  .home__special-events-section .card__small {
+    min-height: 360px;
+  }
+
+  .home__young-stars-club-section {
+    background-image: url(../../assets/images/young-stars-club_2064w.jpg),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    font-size: var(--font-size-desktop-body-large);
+  }
+
+  .home__young-stars-club-content,
+  .home__young-stars-club-content div {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .home__information-section-content,
+  .home__special-events-section-content {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1100px) {
+  .home__young-stars-club-content {
+    max-width: 900px;
+  }
+}

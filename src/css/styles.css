@@ -85,39 +85,28 @@ h5 {
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-@media (min-width: 600px) {
-  h2,
-  h3,
-  h4,
-  h5 {
-    text-align: left;
-  }
-}
-
-.center-content {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-}
-
 .container {
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--padding-mobile-content);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .button__primary,
 .button__secondary,
 .button__cta {
   font-size: var(--font-size-mobile-body-medium);
+  text-align: center;
   color: var(--neutral-color-white);
   padding: var(--padding-button);
   height: auto;
   width: auto;
+  display: block;
 }
 
 .button__primary {
@@ -170,6 +159,23 @@ select {
 }
 
 @media (min-width: 600px) {
+  .container {
+    padding: var(--padding-desktop-content);
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: left;
+  }
+
+  .button__primary,
+  .button__secondary,
+  .button__cta {
+    width: fit-content;
+  }
+
   .button__primary,
   .button__secondary,
   .button__cta,
@@ -179,6 +185,11 @@ select {
   select {
     font-size: var(--font-size-desktop-body-medium);
   }
+}
+
+.card__small {
+  background-color: var(--primary-color-light-hover);
+  padding: var(--padding-16);
 }
 
 /* || Header and Main Navigation */
@@ -216,8 +227,6 @@ nav {
 }
 
 .nav__links {
-  display: flex;
-  flex-direction: column;
   padding: 0px;
 }
 
@@ -245,7 +254,7 @@ nav {
   display: block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   header {
     height: 7rem;
   }
@@ -307,6 +316,7 @@ nav {
 footer {
   background-color: var(--primary-color-dark);
   color: var(--neutral-color-white);
+  font-size: var(--font-size-mobile-body-medium);
 }
 
 footer a {
@@ -314,8 +324,6 @@ footer a {
 }
 
 footer section {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   gap: 0.5rem;
 }
@@ -325,32 +333,36 @@ footer li {
 }
 
 .footer__content {
-  padding: var(--padding-mobile-content);
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
 
 .footer__link-lists,
 .footer__newsletter-social {
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
+}
+
+.footer__newsletter-social form {
+  display: flex;
+}
+
+.footer__social-media {
+  align-items: center;
 }
 
 .footer__social-media-icons {
   display: flex;
-  flex-direction: row;
   gap: 2rem;
 }
 
 .footer__bottom-text,
 .footer__terms-privacy-links {
-  display: flex;
-  flex-direction: column;
   gap: 0.5rem;
   text-align: center;
+}
+
+.footer__bottom-text {
+  font-size: var(--font-size-mobile-body-small);
 }
 
 .footer__bottom-text a {
@@ -359,22 +371,26 @@ footer li {
 }
 
 @media (min-width: 600px) {
-  .footer__content {
-    padding: var(--padding-desktop-content);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 2rem;
+  footer {
+    font-size: var(--font-size-desktop-body-medium);
   }
 
   footer section {
     text-align: left;
   }
 
+  .footer__content {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    justify-content: center;
+  }
+
   .footer__link-lists {
     flex-direction: row;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
   }
@@ -382,6 +398,40 @@ footer li {
   .footer__terms-privacy-links {
     flex-direction: row;
     justify-content: center;
+  }
+
+  .footer__newsletter-social {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-items: center;
+  }
+
+  .footer__bottom-text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: var(--font-size-desktop-body-medium);
+  }
+}
+
+@media (min-width: 1300px) {
+  .footer__social-media {
+    align-items: flex-start;
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .footer__link-lists {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
   .footer__newsletter-social {
@@ -398,3 +448,7 @@ footer li {
     grid-row-end: 3;
   }
 }
+
+/* * {
+  border: 1px solid red;
+} */

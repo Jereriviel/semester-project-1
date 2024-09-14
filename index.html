@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="header_content">
+      <div class="header_content container">
         <a href="index.html"
           ><img
             class="header_logo"
@@ -37,7 +37,7 @@
           ></label>
           <input type="checkbox" id="menu-checkbox" />
           <nav>
-            <div class="nav__links">
+            <div class="nav__links flex-column">
               <a href="visit.html">Visit</a>
               <a href="explore.html">Explore</a>
               <a href="exhibitions.html">Exhibitions</a>
@@ -49,110 +49,121 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <h1>Welcome to the Community Science Museum</h1>
-        <p>
-          Come join us at the Community Science Museum where we’re committed to
-          making science accessible to all.
-        </p>
-        <a href="explore.html" class="button__primary">Explore our museum</a>
-      </section>
-      <section>
-        <section>
-          <h3>Find Us</h3>
-          <p>Mølleparken 4</p>
-          <p>0459 Oslo</p>
-          <a href="https://maps.app.goo.gl/4vLJVMuyXKG7FvoQ9" target="_blank"
-            >View in Google Maps</a
-          >
-        </section>
-        <section>
-          <h3>Opening Times</h3>
-          <p>Today: Open</p>
-          <p>10.00 - 16.00</p>
-          <a href="visit.html">See all opening times</a>
-        </section>
-        <section>
-          <h3>Book Tickets</h3>
-          <p>Entrance is free for all.</p>
-          <p>You can also buy tickets for our hourly guided tour.</p>
-          <a href="visit.html" class="button__cta">Book your tickets here</a>
-        </section>
-      </section>
-      <section>
-        <h2>Special Events and Exhibitions</h2>
-        <section>
-          <figure>
-            <img
-              src="assets/images/special-events_professor_600w.jpg"
-              alt="Headshot of Professor Sheila Widnall."
-            />
-          </figure>
-          <h4>Visiting Professor of Aeronautics</h4>
-          <div>
-            <p>
-              It is our pleasure to announce that Prof Sheila Widnall from the
-              Massachusetts Institute of Technology will be delivering 3
-              lectures on the development of aeronautics and where the future
-              lies in this exciting ‘space’.
-            </p>
-          </div>
-        </section>
-        <section>
-          <figure>
-            <img
-              src="assets/images/special-events_night-museum_600w.jpg"
-              alt="Dimly lit museum space with a woman looking at an elephant on display."
-            />
-          </figure>
-          <h4>Night in the Museum</h4>
-          <div>
-            <p>
-              Get your family together for an exciting night in the museum as
-              you sleep over beside dinosaurs and science displays. Bring your
-              own sleeping bag and get ready to rough it as we go exploring the
-              wonders of science.
-            </p>
-          </div>
-        </section>
-        <section>
-          <figure>
-            <img
-              src="assets/images/special-events_energica_600w.jpg"
-              alt="A model of multiple wind turbines in front of lit up city buildings."
-            />
-          </figure>
-          <h4>Energetica Exhibition on Loan</h4>
-          <div>
-            <p>
-              On loan from the NEMO Science Museum in Amsterdam, the Energetica
-              exhibition is coming to the Community Science Museum. It’s a
-              series of installations that allow visitors to experience the
-              power of the elements as we harness them. From solar energy
-              powering lighting, to ‘Wind Island’ that shows how turbines are
-              able to use and control wind to create power.
-            </p>
-          </div>
-        </section>
-      </section>
-      <section>
-        <h2>Young Stars Club</h2>
-        <div>
-          <h4>Come explore and experiment with our team of experts!</h4>
+      <section class="home__hero">
+        <div class="home__hero-content container flex-column">
+          <h1>Welcome to the Community Science Museum</h1>
           <p>
-            The museum is excited to present the Young Stars Club where children
-            ages 7 - 15 can join in on learning and having fun with the museums
-            own expert team. There will be different topics every meeting.
+            Come join us at the Community Science Museum where we’re committed
+            to making science accessible to all.
           </p>
-          <p>The meetings are held every Saturday between 10:00 and 13:00.</p>
-          <p>Participation is free, sign up at the reception desk.</p>
+          <a href="explore.html" class="button__primary">Explore our museum</a>
+        </div>
+      </section>
+      <section class="home__information-section">
+        <div class="home__information-section-content container flex-column">
+          <section class="home__underlined flex-column">
+            <h3>Find Us</h3>
+            <p>Mølleparken 4</p>
+            <p>0459 Oslo</p>
+            <a href="https://maps.app.goo.gl/4vLJVMuyXKG7FvoQ9" target="_blank"
+              >View in Google Maps</a
+            >
+          </section>
+          <section class="home__underlined flex-column">
+            <h3>Opening Times</h3>
+            <p>Today: Open</p>
+            <p>10.00 - 16.00</p>
+            <a href="visit.html">See all opening times</a>
+          </section>
+          <section class="flex-column">
+            <h3>Book Tickets</h3>
+            <p>Entrance is free for all.</p>
+            <p>You can also buy tickets for our<br />hourly guided tour.</p>
+            <a href="visit.html" class="button__cta">Book your tickets here</a>
+          </section>
+        </div>
+      </section>
+      <section class="home__special-events-section">
+        <div class="container flex-column">
+          <h2>Special Events and Exhibitions</h2>
+          <div class="home__special-events-section-content flex-column">
+            <article>
+              <figure>
+                <img
+                  src="assets/images/special-events_professor_600w.jpg"
+                  alt="Headshot of Professor Sheila Widnall."
+                />
+              </figure>
+              <section class="card__small">
+                <h4>Visiting Professor of Aeronautics</h4>
+                <p>
+                  It is our pleasure to announce that Prof Sheila Widnall from
+                  the Massachusetts Institute of Technology will be delivering 3
+                  lectures on the development of aeronautics and where the
+                  future lies in this exciting ‘space’.
+                </p>
+              </section>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="assets/images/special-events_night-museum_600w.jpg"
+                  alt="Dimly lit museum space with a woman looking at an elephant on display."
+                />
+              </figure>
+              <section class="card__small">
+                <h4>Night in the Museum</h4>
+                <p>
+                  Get your family together for an exciting night in the museum
+                  as you sleep over beside dinosaurs and science displays. Bring
+                  your own sleeping bag and get ready to rough it as we go
+                  exploring the wonders of science.
+                </p>
+              </section>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="assets/images/special-events_energica_600w.jpg"
+                  alt="A model of multiple wind turbines in front of lit up city buildings."
+                />
+              </figure>
+              <section class="card__small">
+                <h4>Energetica Exhibition on Loan</h4>
+                <p>
+                  On loan from the NEMO Science Museum in Amsterdam, the
+                  Energetica exhibition is coming to the Community Science
+                  Museum. It’s a series of installations that allow visitors to
+                  experience the power of the elements as we harness them. From
+                  solar energy powering lighting, to ‘Wind Island’ that shows
+                  how turbines are able to use and control wind to create power.
+                </p>
+              </section>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="home__young-stars-club-section flex-column">
+        <div class="home__young-stars-club-content container flex-column">
+          <h2>Young Stars Club</h2>
+          <div class="flex-column">
+            <h4>Come explore and experiment with our team of experts!</h4>
+            <p>
+              The museum is excited to present the Young Stars Club where
+              children ages 7 - 15 can join in on learning and having fun with
+              the museums own expert team. There will be different topics every
+              meeting.
+            </p>
+            <p>The meetings are held every Saturday between 10:00 and 13:00.</p>
+            <p>Participation is free, sign up at the reception desk.</p>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="footer__content">
-        <div class="footer__link-lists">
-          <section>
+      <div class="footer__content container flex-column">
+        <div class="footer__link-lists flex-column">
+          <section class="flex-column">
             <h4>The Museum</h4>
             <ul>
               <li><a href="contact.html">Contact Us</a></li>
@@ -162,7 +173,7 @@
               <li><a href="explore.html">Explore</a></li>
             </ul>
           </section>
-          <section>
+          <section class="flex-column">
             <h4>Visit</h4>
             <ul>
               <li><a href="visit.html">Admission</a></li>
@@ -172,7 +183,7 @@
               <li><a href="visit.html">Shop</a></li>
             </ul>
           </section>
-          <section>
+          <section class="flex-column">
             <h4>Get Involved</h4>
             <ul>
               <li><a href="contribute.html">Volunteering</a></li>
@@ -181,8 +192,8 @@
             </ul>
           </section>
         </div>
-        <div class="footer__newsletter-social">
-          <section>
+        <div class="footer__newsletter-social flex-column">
+          <section class="flex-column">
             <h4>Sign up for our Newsletter</h4>
             <form>
               <label for="email-subscribe"></label>
@@ -196,7 +207,7 @@
               <button class="button__primary">Subscribe</button>
             </form>
           </section>
-          <section>
+          <section class="footer__social-media flex-column">
             <h4>Social Media</h4>
             <ul class="footer__social-media-icons">
               <li><i class="fa-brands fa-twitter fa-lg"></i></li>
@@ -207,9 +218,9 @@
             </ul>
           </section>
         </div>
-        <div class="footer__bottom-text">
+        <div class="footer__bottom-text flex-column">
           <p>All rights reserved</p>
-          <div class="footer__terms-privacy-links">
+          <div class="footer__terms-privacy-links flex-column">
             <a href="documents.html">Terms and Conditions</a>
             <a href="documents.html">Privacy Policy</a>
           </div>

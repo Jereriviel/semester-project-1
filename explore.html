@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="header_content">
+      <div class="header_content container">
         <a href="index.html"
           ><img
             class="header_logo"
@@ -37,7 +37,7 @@
           ></label>
           <input type="checkbox" id="menu-checkbox" />
           <nav>
-            <div class="nav__links">
+            <div class="nav__links flex-column">
               <a href="visit.html">Visit</a>
               <a href="explore.html">Explore</a>
               <a href="exhibitions.html">Exhibitions</a>
@@ -135,9 +135,9 @@
       </section>
     </main>
     <footer>
-      <div class="footer__content">
-        <div class="footer__link-lists">
-          <section>
+      <div class="footer__content container flex-column">
+        <div class="footer__link-lists flex-column">
+          <section class="flex-column">
             <h4>The Museum</h4>
             <ul>
               <li><a href="contact.html">Contact Us</a></li>
@@ -147,7 +147,7 @@
               <li><a href="explore.html">Explore</a></li>
             </ul>
           </section>
-          <section>
+          <section class="flex-column">
             <h4>Visit</h4>
             <ul>
               <li><a href="visit.html">Admission</a></li>
@@ -157,7 +157,7 @@
               <li><a href="visit.html">Shop</a></li>
             </ul>
           </section>
-          <section>
+          <section class="flex-column">
             <h4>Get Involved</h4>
             <ul>
               <li><a href="contribute.html">Volunteering</a></li>
@@ -166,8 +166,8 @@
             </ul>
           </section>
         </div>
-        <div class="footer__newsletter-social">
-          <section>
+        <div class="footer__newsletter-social flex-column">
+          <section class="flex-column">
             <h4>Sign up for our Newsletter</h4>
             <form>
               <label for="email-subscribe"></label>
@@ -181,7 +181,7 @@
               <button class="button__primary">Subscribe</button>
             </form>
           </section>
-          <section>
+          <section class="footer__social-media flex-column">
             <h4>Social Media</h4>
             <ul class="footer__social-media-icons">
               <li><i class="fa-brands fa-twitter fa-lg"></i></li>
@@ -192,9 +192,9 @@
             </ul>
           </section>
         </div>
-        <div class="footer__bottom-text">
+        <div class="footer__bottom-text flex-column">
           <p>All rights reserved</p>
-          <div class="footer__terms-privacy-links">
+          <div class="footer__terms-privacy-links flex-column">
             <a href="documents.html">Terms and Conditions</a>
             <a href="documents.html">Privacy Policy</a>
           </div>
