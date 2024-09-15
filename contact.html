@@ -27,7 +27,7 @@
       <div class="header_content container">
         <a href="index.html"
           ><img
-            class="header_logo"
+            class="header__logo"
             src="assets/logo/csm_logo_white.svg"
             alt="Community Science Museum logo"
         /></a>
@@ -37,7 +37,7 @@
           ></label>
           <input type="checkbox" id="menu-checkbox" />
           <nav>
-            <div class="nav__links flex-column">
+            <div class="nav__links flex__column">
               <a href="visit.html">Visit</a>
               <a href="explore.html">Explore</a>
               <a href="exhibitions.html">Exhibitions</a>
@@ -49,155 +49,183 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="contact__heading">
         <h1>Contact Us</h1>
       </section>
-      <section>
-        <h2>Contact Details</h2>
-        <section>
-          <h3>Address</h3>
-          <p>Mølleparken 4</p>
-          <p>0459 Oslo</p>
-          <p>Norway</p>
-        </section>
-        <section>
-          <h3>Phone</h3>
-          <p>+47 999 99 999</p>
-          <p>Open Mon - Fri 08.00 - 16.00</p>
-        </section>
-        <section>
-          <h3>Email</h3>
-          <p>example@email.com</p>
-        </section>
-        <section>
-          <h3>Work for us</h3>
-          <p>Interested in working for us?</p>
-          <p>Send an email to:</p>
-          <p>workforus.example@email.com</p>
-        </section>
-      </section>
-      <section>
-        <h2>Message Us</h2>
-        <form>
-          <div>
-            <label for="name">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="First and last name"
-              required
-            />
+      <div class="contact__details-and-message">
+        <div
+          class="contact__details-and-message-content container flex__column"
+        >
+          <section class="contact__details flex__column">
+            <h2>Contact Details</h2>
+            <section class="flex__column">
+              <h3>Address</h3>
+              <p>Mølleparken 4</p>
+              <p>0459 Oslo</p>
+              <p>Norway</p>
+            </section>
+            <section class="flex__column">
+              <h3>Phone</h3>
+              <p>+47 999 99 999</p>
+              <p>Open Mon - Fri 08.00 - 16.00</p>
+            </section>
+            <section class="flex__column">
+              <h3>Email</h3>
+              <p class="fake-link">example@email.com</p>
+            </section>
+            <section class="flex__column">
+              <h3>Work for us</h3>
+              <p>Interested in working for us?</p>
+              <p>Send an email to:</p>
+              <p class="fake-link">workforus.example@email.com</p>
+            </section>
+          </section>
+          <section class="contact__message flex__column">
+            <h2>Message Us</h2>
+            <form class="flex__column">
+              <div class="flex__column">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="First and last name"
+                  required
+                />
+              </div>
+              <div class="flex__column">
+                <label for="email-contact">Email</label>
+                <input
+                  type="email"
+                  name="email-contact"
+                  id="email-contact"
+                  placeholder="example@email.com"
+                  required
+                />
+              </div>
+              <div class="flex__column">
+                <label for="phone">Phone (optional)</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="+47 999 99 999"
+                />
+              </div>
+              <div class="flex__column">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject of message"
+                  required
+                />
+              </div>
+              <div class="flex__column">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+              </div>
+              <div class="flex__column">
+                <button class="button__primary">Submit</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+      <section class="contact__administration">
+        <div class="container">
+          <h2>Administration</h2>
+          <div class="contact__administration-content">
+            <article>
+              <figure>
+                <img
+                  srcset="
+                    assets/images/contact-us_director_800w.jpg 800w,
+                    assets/images/contact-us_director_400w.jpg 400w
+                  "
+                  sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px"
+                  src="assets/images/contact-us_director_fallback.jpg"
+                  alt="Headshot of Museum Director Solveig Birkeland."
+                />
+              </figure>
+              <section class="card__small">
+                <h5>Museum Director</h5>
+                <p>Solveig Birkeland</p>
+                <p>Tel: 999 99 999</p>
+                <p class="fake-link">Email</p>
+              </section>
+            </article>
+            <article>
+              <figure>
+                <img
+                  srcset="
+                    assets/images/contact-us_communication_800w.jpg 800w,
+                    assets/images/contact-us_communication_400w.jpg 400w
+                  "
+                  sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px"
+                  src="assets/images/contact-us_communication_fallback.jpg"
+                  alt="Headshot of Head of Communications and Marketing Irene Nilsen."
+                />
+              </figure>
+              <section class="card__small">
+                <h5>Head of Communication and Marketing</h5>
+                <p>Irene Nilsen</p>
+                <p>Tel: 999 99 999</p>
+                <p class="fake-link">Email</p>
+              </section>
+            </article>
+            <article>
+              <figure>
+                <img
+                  srcset="
+                    assets/images/contact-us_learning_800w.jpg 800w,
+                    assets/images/contact-us_learning_400w.jpg 400w
+                  "
+                  sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px"
+                  src="assets/images/contact-us_learning_fallback.jpg"
+                  alt="Headshot of Head of Learning Johannes Bjørkheim."
+                />
+              </figure>
+              <section class="card__small">
+                <h5>Head of Learning</h5>
+                <p>Johannes Bjørkheim</p>
+                <p>Tel: 999 99 999</p>
+                <p class="fake-link">Email</p>
+              </section>
+            </article>
+            <article>
+              <figure>
+                <img
+                  srcset="
+                    assets/images/contact-us_collections_800w.jpg 800w,
+                    assets/images/contact-us_collections_400w.jpg 400w
+                  "
+                  sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px"
+                  src="assets/images/contact-us_collections_fallback.jpg"
+                  alt="Headshot of Head of Collections Bjørn Oppdal."
+                />
+              </figure>
+              <section class="card__small">
+                <h5>Head of Collections</h5>
+                <p>Bjørn Oppdal</p>
+                <p>Tel: 999 99 999</p>
+                <p class="fake-link">Email</p>
+              </section>
+            </article>
           </div>
-          <div>
-            <label for="email-contact">Email</label>
-            <input
-              type="email"
-              name="email-contact"
-              id="email-contact"
-              placeholder="example@email.com"
-              required
-            />
-          </div>
-          <div>
-            <label for="phone">Phone (optional)</label>
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="+47 999 99 999"
-            />
-          </div>
-          <div>
-            <label for="subject">Subject</label>
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="Subject of message"
-              required
-            />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Write your message here"
-              required
-            ></textarea>
-          </div>
-          <div>
-            <button>Submit</button>
-          </div>
-        </form>
-      </section>
-      <section>
-        <h2>Administration</h2>
-        <div>
-          <article>
-            <figure>
-              <img
-                src="assets/images/contact-us_director_400w.jpg"
-                alt="Headshot of Museum Director Solveig Birkeland."
-              />
-            </figure>
-            <h5>Museum Director</h5>
-            <div>
-              <p>Solveig Birkeland</p>
-              <p>Tel: 999 99 999</p>
-              <p>Email</p>
-            </div>
-          </article>
-          <article>
-            <figure>
-              <img
-                src="assets/images/contact-us_communication_400w.jpg"
-                alt="Headshot of Head of Communications and Marketing Irene Nilsen."
-              />
-            </figure>
-            <h5>Head of Communications and Marketing</h5>
-            <div>
-              <p>Irene Nilsen</p>
-              <p>Tel: 999 99 999</p>
-              <p>Email</p>
-            </div>
-          </article>
-          <article>
-            <figure>
-              <img
-                src="assets/images/contact-us_learning_400w.jpg"
-                alt="Headshot of Head of Learning Johannes Bjørkheim."
-              />
-            </figure>
-            <h5>Head of Learning</h5>
-            <div>
-              <p>Johannes Bjørkheim</p>
-              <p>Tel: 999 99 999</p>
-              <p>Email</p>
-            </div>
-          </article>
-          <article>
-            <figure>
-              <img
-                src="assets/images/contact-us_collections_400w.jpg"
-                alt="Headshot of Head of Collections Bjørn Oppdal."
-              />
-            </figure>
-            <h5>Head of Collections</h5>
-            <div>
-              <p>Bjørn Oppdal</p>
-              <p>Tel: 999 99 999</p>
-              <p>Email</p>
-            </div>
-          </article>
         </div>
       </section>
     </main>
     <footer>
-      <div class="footer__content container flex-column">
-        <div class="footer__link-lists flex-column">
-          <section class="flex-column">
+      <div class="footer__content container flex__column">
+        <div class="footer__link-lists flex__column">
+          <section class="flex__column">
             <h4>The Museum</h4>
             <ul>
               <li><a href="contact.html">Contact Us</a></li>
@@ -207,7 +235,7 @@
               <li><a href="explore.html">Explore</a></li>
             </ul>
           </section>
-          <section class="flex-column">
+          <section class="flex__column">
             <h4>Visit</h4>
             <ul>
               <li><a href="visit.html">Admission</a></li>
@@ -217,7 +245,7 @@
               <li><a href="visit.html">Shop</a></li>
             </ul>
           </section>
-          <section class="flex-column">
+          <section class="flex__column">
             <h4>Get Involved</h4>
             <ul>
               <li><a href="contribute.html">Volunteering</a></li>
@@ -226,8 +254,8 @@
             </ul>
           </section>
         </div>
-        <div class="footer__newsletter-social flex-column">
-          <section class="flex-column">
+        <div class="footer__newsletter-social flex__column">
+          <section class="flex__column">
             <h4>Sign up for our Newsletter</h4>
             <form>
               <label for="email-subscribe"></label>
@@ -241,7 +269,7 @@
               <button class="button__primary">Subscribe</button>
             </form>
           </section>
-          <section class="footer__social-media flex-column">
+          <section class="footer__social-media flex__column">
             <h4>Social Media</h4>
             <ul class="footer__social-media-icons">
               <li><i class="fa-brands fa-twitter fa-lg"></i></li>
@@ -252,9 +280,9 @@
             </ul>
           </section>
         </div>
-        <div class="footer__bottom-text flex-column">
+        <div class="footer__bottom-text flex__column">
           <p>All rights reserved</p>
-          <div class="footer__terms-privacy-links flex-column">
+          <div class="footer__terms-privacy-links flex__column">
             <a href="documents.html">Terms and Conditions</a>
             <a href="documents.html">Privacy Policy</a>
           </div>

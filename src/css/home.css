@@ -97,23 +97,6 @@
     justify-content: space-between;
   }
 
-  .home__special-events-section-content {
-    flex-direction: row;
-  }
-
-  .home__special-events-section-content article {
-    flex-basis: 33%;
-  }
-
-  .home__special-events-section article {
-    max-width: 400px;
-    min-width: 300px;
-  }
-
-  .home__special-events-section .card__small {
-    min-height: 360px;
-  }
-
   .home__young-stars-club-section {
     background-image: url(../../assets/images/young-stars-club_2064w.jpg),
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -127,6 +110,29 @@
   }
 }
 
+@media (min-width: 1100px) {
+  .home__special-events-section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .home__special-events-section-content article {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home__special-events-section article {
+    max-width: 400px;
+    min-width: 300px;
+  }
+
+  .home__young-stars-club-content {
+    max-width: 900px;
+  }
+}
+
 @media (max-width: 1100px) {
   .home__information-section-content,
   .home__special-events-section-content {
@@ -134,8 +140,10 @@
   }
 }
 
-@media (min-width: 1100px) {
-  .home__young-stars-club-content {
-    max-width: 900px;
+@media (max-width: 1200px) {
+  .home__special-events-section-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

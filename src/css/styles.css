@@ -92,7 +92,7 @@ h5 {
   padding: var(--padding-mobile-content);
 }
 
-.flex-column {
+.flex__column {
   display: flex;
   flex-direction: column;
 }
@@ -149,6 +149,16 @@ h5 {
   background-color: var(--secondary-color-normal-active);
 }
 
+.card__small {
+  background-color: var(--primary-color-light-hover);
+  padding: var(--padding-16);
+}
+
+.fake-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 input,
 button,
 textarea,
@@ -187,11 +197,6 @@ select {
   }
 }
 
-.card__small {
-  background-color: var(--primary-color-light-hover);
-  padding: var(--padding-16);
-}
-
 /* || Header and Main Navigation */
 
 header {
@@ -208,7 +213,7 @@ header {
   min-height: 100%;
 }
 
-.header_logo {
+.header__logo {
   height: 2.25rem;
 }
 
@@ -263,7 +268,7 @@ nav {
     padding: var(--padding-desktop-header);
   }
 
-  .header_logo {
+  .header__logo {
     height: 3.75rem;
   }
 

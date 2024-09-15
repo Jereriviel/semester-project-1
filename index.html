@@ -27,7 +27,7 @@
       <div class="header_content container">
         <a href="index.html"
           ><img
-            class="header_logo"
+            class="header__logo"
             src="assets/logo/csm_logo_white.svg"
             alt="Community Science Museum logo"
         /></a>
@@ -37,7 +37,7 @@
           ></label>
           <input type="checkbox" id="menu-checkbox" />
           <nav>
-            <div class="nav__links flex-column">
+            <div class="nav__links flex__column">
               <a href="visit.html">Visit</a>
               <a href="explore.html">Explore</a>
               <a href="exhibitions.html">Exhibitions</a>
@@ -50,7 +50,7 @@
     </header>
     <main>
       <section class="home__hero">
-        <div class="home__hero-content container flex-column">
+        <div class="home__hero-content container flex__column">
           <h1>Welcome to the Community Science Museum</h1>
           <p>
             Come join us at the Community Science Museum where we’re committed
@@ -60,8 +60,8 @@
         </div>
       </section>
       <section class="home__information-section">
-        <div class="home__information-section-content container flex-column">
-          <section class="home__underlined flex-column">
+        <div class="home__information-section-content container flex__column">
+          <section class="home__underlined flex__column">
             <h3>Find Us</h3>
             <p>Mølleparken 4</p>
             <p>0459 Oslo</p>
@@ -69,13 +69,13 @@
               >View in Google Maps</a
             >
           </section>
-          <section class="home__underlined flex-column">
+          <section class="home__underlined flex__column">
             <h3>Opening Times</h3>
             <p>Today: Open</p>
             <p>10.00 - 16.00</p>
             <a href="visit.html">See all opening times</a>
           </section>
-          <section class="flex-column">
+          <section class="flex__column">
             <h3>Book Tickets</h3>
             <p>Entrance is free for all.</p>
             <p>You can also buy tickets for our<br />hourly guided tour.</p>
@@ -84,13 +84,18 @@
         </div>
       </section>
       <section class="home__special-events-section">
-        <div class="container flex-column">
+        <div class="container flex__column">
           <h2>Special Events and Exhibitions</h2>
-          <div class="home__special-events-section-content flex-column">
+          <div class="home__special-events-section-content flex__column">
             <article>
               <figure>
                 <img
-                  src="assets/images/special-events_professor_600w.jpg"
+                  srcset="
+                    assets/images/special-events_professor_1200w.jpg 1200w,
+                    assets/images/special-events_professor_600w.jpg   600w
+                  "
+                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                  src="assets/images/special-events_professor_fallback.jpg"
                   alt="Headshot of Professor Sheila Widnall."
                 />
               </figure>
@@ -107,7 +112,12 @@
             <article>
               <figure>
                 <img
-                  src="assets/images/special-events_night-museum_600w.jpg"
+                  srcset="
+                    assets/images/special-events_night-museum_1200w.jpg 1200w,
+                    assets/images/special-events_night-museum_600w.jpg   600w
+                  "
+                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                  src="assets/images/special-events_night-museum_fallback.jpg"
                   alt="Dimly lit museum space with a woman looking at an elephant on display."
                 />
               </figure>
@@ -124,7 +134,12 @@
             <article>
               <figure>
                 <img
-                  src="assets/images/special-events_energica_600w.jpg"
+                  srcset="
+                    assets/images/special-events_energica_1200w.jpg 1200w,
+                    assets/images/special-events_energica_600w.jpg   600w
+                  "
+                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                  src="assets/images/special-events_energica_fallback.jpg"
                   alt="A model of multiple wind turbines in front of lit up city buildings."
                 />
               </figure>
@@ -143,10 +158,10 @@
           </div>
         </div>
       </section>
-      <section class="home__young-stars-club-section flex-column">
-        <div class="home__young-stars-club-content container flex-column">
+      <section class="home__young-stars-club-section flex__column">
+        <div class="home__young-stars-club-content container flex__column">
           <h2>Young Stars Club</h2>
-          <div class="flex-column">
+          <div class="flex__column">
             <h4>Come explore and experiment with our team of experts!</h4>
             <p>
               The museum is excited to present the Young Stars Club where
@@ -161,9 +176,9 @@
       </section>
     </main>
     <footer>
-      <div class="footer__content container flex-column">
-        <div class="footer__link-lists flex-column">
-          <section class="flex-column">
+      <div class="footer__content container flex__column">
+        <div class="footer__link-lists flex__column">
+          <section class="flex__column">
             <h4>The Museum</h4>
             <ul>
               <li><a href="contact.html">Contact Us</a></li>
@@ -173,7 +188,7 @@
               <li><a href="explore.html">Explore</a></li>
             </ul>
           </section>
-          <section class="flex-column">
+          <section class="flex__column">
             <h4>Visit</h4>
             <ul>
               <li><a href="visit.html">Admission</a></li>
@@ -183,7 +198,7 @@
               <li><a href="visit.html">Shop</a></li>
             </ul>
           </section>
-          <section class="flex-column">
+          <section class="flex__column">
             <h4>Get Involved</h4>
             <ul>
               <li><a href="contribute.html">Volunteering</a></li>
@@ -192,8 +207,8 @@
             </ul>
           </section>
         </div>
-        <div class="footer__newsletter-social flex-column">
-          <section class="flex-column">
+        <div class="footer__newsletter-social flex__column">
+          <section class="flex__column">
             <h4>Sign up for our Newsletter</h4>
             <form>
               <label for="email-subscribe"></label>
@@ -207,7 +222,7 @@
               <button class="button__primary">Subscribe</button>
             </form>
           </section>
-          <section class="footer__social-media flex-column">
+          <section class="footer__social-media flex__column">
             <h4>Social Media</h4>
             <ul class="footer__social-media-icons">
               <li><i class="fa-brands fa-twitter fa-lg"></i></li>
@@ -218,9 +233,9 @@
             </ul>
           </section>
         </div>
-        <div class="footer__bottom-text flex-column">
+        <div class="footer__bottom-text flex__column">
           <p>All rights reserved</p>
-          <div class="footer__terms-privacy-links flex-column">
+          <div class="footer__terms-privacy-links flex__column">
             <a href="documents.html">Terms and Conditions</a>
             <a href="documents.html">Privacy Policy</a>
           </div>

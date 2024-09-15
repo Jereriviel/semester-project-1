@@ -24,8 +24,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   overflow-wrap: break-word;
   text-wrap: balance;
 }
@@ -35,6 +34,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 figure,
 blockquote,
@@ -51,8 +51,7 @@ ol {
   padding: 0px;
 }
 
-button,
-input {
+button {
   border-style: none;
   border-width: 0px;
   padding-block: 0px;
