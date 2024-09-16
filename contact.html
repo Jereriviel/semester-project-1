@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="header_content container">
+      <div class="header__content container flex">
         <a href="index.html"
           ><img
             class="header__logo"
@@ -44,7 +44,7 @@
               <a href="contribute.html">Contribute</a>
             </div>
           </nav>
-          <a class="button__cta" href="visit.html">Book now</a>
+          <a class="button button__cta" href="visit.html">Book now</a>
         </div>
       </div>
     </header>
@@ -66,18 +66,20 @@
             </section>
             <section class="flex__column">
               <h3>Phone</h3>
-              <p>+47 999 99 999</p>
+              <a href="tlf:9999999">Tel: 999 99 999</a>
               <p>Open Mon - Fri 08.00 - 16.00</p>
             </section>
             <section class="flex__column">
               <h3>Email</h3>
-              <p class="fake-link">example@email.com</p>
+              <a href="mailto:example@email.com">example@email.com</a>
             </section>
             <section class="flex__column">
               <h3>Work for us</h3>
               <p>Interested in working for us?</p>
               <p>Send an email to:</p>
-              <p class="fake-link">workforus.example@email.com</p>
+              <a href="mailto:workforus.example@email.com"
+                >workforus.example@email.com</a
+              >
             </section>
           </section>
           <section class="contact__message flex__column">
@@ -132,7 +134,7 @@
                 ></textarea>
               </div>
               <div class="flex__column">
-                <button class="button__primary">Submit</button>
+                <button class="button button__primary">Submit</button>
               </div>
             </form>
           </section>
@@ -154,11 +156,11 @@
                   alt="Headshot of Museum Director Solveig Birkeland."
                 />
               </figure>
-              <section class="card__small">
+              <section class="card__small flex__column">
                 <h5>Museum Director</h5>
                 <p>Solveig Birkeland</p>
-                <p>Tel: 999 99 999</p>
-                <p class="fake-link">Email</p>
+                <a href="tlf:9999999">Tel: 999 99 999</a>
+                <a href="mailto:example@email.com">Email</a>
               </section>
             </article>
             <article>
@@ -173,11 +175,11 @@
                   alt="Headshot of Head of Communications and Marketing Irene Nilsen."
                 />
               </figure>
-              <section class="card__small">
+              <section class="card__small flex__column">
                 <h5>Head of Communication and Marketing</h5>
                 <p>Irene Nilsen</p>
-                <p>Tel: 999 99 999</p>
-                <p class="fake-link">Email</p>
+                <a href="tlf:9999999">Tel: 999 99 999</a>
+                <a href="mailto:example@email.com">Email</a>
               </section>
             </article>
             <article>
@@ -192,11 +194,11 @@
                   alt="Headshot of Head of Learning Johannes Bjørkheim."
                 />
               </figure>
-              <section class="card__small">
+              <section class="card__small flex__column">
                 <h5>Head of Learning</h5>
                 <p>Johannes Bjørkheim</p>
-                <p>Tel: 999 99 999</p>
-                <p class="fake-link">Email</p>
+                <a href="tlf:9999999">Tel: 999 99 999</a>
+                <a href="mailto:example@email.com">Email</a>
               </section>
             </article>
             <article>
@@ -211,11 +213,11 @@
                   alt="Headshot of Head of Collections Bjørn Oppdal."
                 />
               </figure>
-              <section class="card__small">
+              <section class="card__small flex__column">
                 <h5>Head of Collections</h5>
                 <p>Bjørn Oppdal</p>
-                <p>Tel: 999 99 999</p>
-                <p class="fake-link">Email</p>
+                <a href="tlf:9999999">Tel: 999 99 999</a>
+                <a href="mailto:example@email.com">Email</a>
               </section>
             </article>
           </div>
@@ -255,30 +257,32 @@
           </section>
         </div>
         <div class="footer__newsletter-social flex__column">
-          <section class="flex__column">
-            <h4>Sign up for our Newsletter</h4>
-            <form>
-              <label for="email-subscribe"></label>
-              <input
-                type="email"
-                id="email-subscribe"
-                name="email-subscribe"
-                placeholder="example@email.com"
-                required
-              />
-              <button class="button__primary">Subscribe</button>
-            </form>
-          </section>
-          <section class="footer__social-media flex__column">
-            <h4>Social Media</h4>
-            <ul class="footer__social-media-icons">
-              <li><i class="fa-brands fa-twitter fa-lg"></i></li>
-              <li><i class="fa-brands fa-facebook fa-lg"></i></li>
-              <li><i class="fa-brands fa-instagram fa-lg"></i></li>
-              <li><i class="fa-brands fa-youtube fa-lg"></i></li>
-              <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
-            </ul>
-          </section>
+          <div class="flex__column">
+            <section class="footer__newsletter flex__column">
+              <h4>Sign up for our Newsletter</h4>
+              <form class="flex">
+                <label for="email-subscribe"></label>
+                <input
+                  type="email"
+                  id="email-subscribe"
+                  name="email-subscribe"
+                  placeholder="example@email.com"
+                  required
+                />
+                <button class="button button__primary">Subscribe</button>
+              </form>
+            </section>
+            <section class="footer__social-media flex__column">
+              <h4>Social Media</h4>
+              <ul class="footer__social-media-icons flex">
+                <li><i class="fa-brands fa-twitter fa-lg"></i></li>
+                <li><i class="fa-brands fa-facebook fa-lg"></i></li>
+                <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                <li><i class="fa-brands fa-youtube fa-lg"></i></li>
+                <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
+              </ul>
+            </section>
+          </div>
         </div>
         <div class="footer__bottom-text flex__column">
           <p>All rights reserved</p>

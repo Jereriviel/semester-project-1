@@ -23,6 +23,10 @@
   gap: 0.5rem;
 }
 
+.contact__details a {
+  text-decoration: underline;
+}
+
 .contact__message {
   font-size: var(--font-size-mobile-body-medium);
   gap: 2rem;
@@ -43,10 +47,19 @@
 .contact__administration {
   background-color: var(--neutral-color-light);
   font-size: var(--font-size-mobile-body-small);
+  line-height: 1.8;
 }
 
 .contact__administration h2 {
   padding-bottom: 2rem;
+}
+
+.contact__administration a {
+  text-decoration: underline;
+}
+
+.contact__administration h5 {
+  padding-bottom: 0.5rem;
 }
 
 .contact__administration-content {

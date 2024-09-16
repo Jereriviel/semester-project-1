@@ -57,8 +57,8 @@
   --padding-mobile-content: 2rem 1rem;
   --padding-desktop-content: 4rem;
 
-  --padding-mobile-header: 0rem 1rem;
-  --padding-desktop-header: 0rem 4rem;
+  --padding-mobile-header: 0.5rem 1rem;
+  --padding-desktop-header: 1rem 4rem;
 
   --padding-button: 1rem 2rem;
 }

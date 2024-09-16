@@ -62,3 +62,21 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-wrap: balance;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}

@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="header_content container">
+      <div class="header__content container flex">
         <a href="index.html"
           ><img
             class="header__logo"
@@ -44,19 +44,21 @@
               <a href="contribute.html">Contribute</a>
             </div>
           </nav>
-          <a class="button__cta" href="visit.html">Book now</a>
+          <a class="button button__cta" href="visit.html">Book now</a>
         </div>
       </div>
     </header>
     <main>
-      <section class="home__hero">
+      <section class="home__hero flex">
         <div class="home__hero-content container flex__column">
           <h1>Welcome to the Community Science Museum</h1>
           <p>
             Come join us at the Community Science Museum where we’re committed
             to making science accessible to all.
           </p>
-          <a href="explore.html" class="button__primary">Explore our museum</a>
+          <a href="explore.html" class="button button__primary"
+            >Explore our museum</a
+          >
         </div>
       </section>
       <section class="home__information-section">
@@ -79,7 +81,9 @@
             <h3>Book Tickets</h3>
             <p>Entrance is free for all.</p>
             <p>You can also buy tickets for our<br />hourly guided tour.</p>
-            <a href="visit.html" class="button__cta">Book your tickets here</a>
+            <a href="visit.html" class="button button__cta"
+              >Book your tickets here</a
+            >
           </section>
         </div>
       </section>
@@ -99,7 +103,7 @@
                   alt="Headshot of Professor Sheila Widnall."
                 />
               </figure>
-              <section class="card__small">
+              <section class="card__small flex__column">
                 <h4>Visiting Professor of Aeronautics</h4>
                 <p>
                   It is our pleasure to announce that Prof Sheila Widnall from
@@ -121,7 +125,7 @@
                   alt="Dimly lit museum space with a woman looking at an elephant on display."
                 />
               </figure>
-              <section class="card__small">
+              <section class="card__small flex__column">
                 <h4>Night in the Museum</h4>
                 <p>
                   Get your family together for an exciting night in the museum
@@ -143,7 +147,7 @@
                   alt="A model of multiple wind turbines in front of lit up city buildings."
                 />
               </figure>
-              <section class="card__small">
+              <section class="card__small flex__column">
                 <h4>Energetica Exhibition on Loan</h4>
                 <p>
                   On loan from the NEMO Science Museum in Amsterdam, the
@@ -158,10 +162,10 @@
           </div>
         </div>
       </section>
-      <section class="home__young-stars-club-section flex__column">
-        <div class="home__young-stars-club-content container flex__column">
-          <h2>Young Stars Club</h2>
-          <div class="flex__column">
+      <section class="home__young-stars-club-section">
+        <div class="container">
+          <div class="home__young-stars-club-content flex__column">
+            <h2>Young Stars Club</h2>
             <h4>Come explore and experiment with our team of experts!</h4>
             <p>
               The museum is excited to present the Young Stars Club where
@@ -208,38 +212,46 @@
           </section>
         </div>
         <div class="footer__newsletter-social flex__column">
-          <section class="flex__column">
-            <h4>Sign up for our Newsletter</h4>
-            <form>
-              <label for="email-subscribe"></label>
-              <input
-                type="email"
-                id="email-subscribe"
-                name="email-subscribe"
-                placeholder="example@email.com"
-                required
-              />
-              <button class="button__primary">Subscribe</button>
-            </form>
-          </section>
-          <section class="footer__social-media flex__column">
-            <h4>Social Media</h4>
-            <ul class="footer__social-media-icons">
-              <li><i class="fa-brands fa-twitter fa-lg"></i></li>
-              <li><i class="fa-brands fa-facebook fa-lg"></i></li>
-              <li><i class="fa-brands fa-instagram fa-lg"></i></li>
-              <li><i class="fa-brands fa-youtube fa-lg"></i></li>
-              <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
-            </ul>
-          </section>
+          <div class="flex__column">
+            <section class="footer__newsletter flex__column">
+              <h4>Sign up for our Newsletter</h4>
+              <form class="flex">
+                <label for="email-subscribe"></label>
+                <input
+                  type="email"
+                  id="email-subscribe"
+                  name="email-subscribe"
+                  placeholder="example@email.com"
+                  required
+                />
+                <button class="button button__primary">Subscribe</button>
+              </form>
+            </section>
+            <section class="footer__social-media flex__column">
+              <h4>Social Media</h4>
+              <ul class="footer__social-media-icons flex">
+                <li><i class="fa-brands fa-twitter fa-lg"></i></li>
+                <li><i class="fa-brands fa-facebook fa-lg"></i></li>
+                <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                <li><i class="fa-brands fa-youtube fa-lg"></i></li>
+                <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
+              </ul>
+            </section>
+          </div>
         </div>
         <div class="footer__bottom-text flex__column">
-          <p>All rights reserved</p>
-          <div class="footer__terms-privacy-links flex__column">
-            <a href="documents.html">Terms and Conditions</a>
-            <a href="documents.html">Privacy Policy</a>
+          <div class="footer__all-rights">
+            <p>All rights reserved</p>
+            <p class="footer__bar">|</p>
+            <div class="footer__terms-privacy-links flex__column">
+              <a href="documents.html">Privacy Policy</a>
+              <p class="footer__bar">|</p>
+              <a href="documents.html">Terms and Conditions</a>
+            </div>
           </div>
-          <p>Copyright &copy; 2024 Community Science Museum</p>
+          <p class="footer__copyright">
+            Copyright &copy; 2024 Community Science Museum
+          </p>
         </div>
       </div>
     </footer>

@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="header_content container">
+      <div class="header__content container flex">
         <a href="index.html"
           ><img
             class="header__logo"
@@ -44,23 +44,28 @@
               <a href="contribute.html">Contribute</a>
             </div>
           </nav>
-          <a class="button__cta" href="visit.html">Book now</a>
+          <a class="button button__cta" href="visit.html">Book now</a>
         </div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="contribute__hero flex">
         <h1>Get involved</h1>
       </section>
-      <section>
-        <figure>
-          <img
-            src="assets/images/get-involved_support_806w.jpg"
-            alt="Close up of a mineral collection."
-          />
-        </figure>
-        <h2>Support Us</h2>
-        <div>
+      <section class="contribute__support-section">
+        <div class="contribute__support-section-content container flex__column">
+          <figure>
+            <img
+              srcset="
+                assets/images/contribute_support_1200w.jpg 1200w,
+                assets/images/contribute_support_600w.jpg   600w
+              "
+              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+              src="assets/images/contribute_support_fallback.jpg"
+              alt="Close up of a mineral collection."
+            />
+          </figure>
+          <h2>Support Us</h2>
           <p>
             There are various ways you can support the museum. Donations are
             very welcome and are an important way we keep this museum open and
@@ -72,18 +77,25 @@
             think others would enjoy, please let us know by contacting our
             Collections Department and they will be able to assist you.
           </p>
+          <a href="contact.html" class="button button__primary">Contact us</a>
         </div>
-        <a href="contact.html">Contact us</a>
       </section>
-      <section>
-        <figure>
-          <img
-            src="assets/images/get-involved_volunteer_806w.jpg"
-            alt="A middle-aged female volunteer talking to a woman."
-          />
-        </figure>
-        <h2>Volunteer</h2>
-        <div>
+      <section class=".contribute__volunteer-section">
+        <div
+          class="contribute__volunteer-section-content container flex__column"
+        >
+          <figure>
+            <img
+              srcset="
+                assets/images/contribute_volunteer_1200w.jpg 1200w,
+                assets/images/contribute_volunteer_600w.jpg   600w
+              "
+              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+              src="assets/images/contribute_volunteer_fallback.jpg"
+              alt="A middle-aged female volunteer talking to a woman."
+            />
+          </figure>
+          <h2>Volunteer</h2>
           <p>
             A number of people volunteer their time and effort to keep the
             displays in good order and ready for visitors to come and enjoy.
@@ -97,18 +109,25 @@
             contact us if you’d like to find out more about how you can get
             involved.
           </p>
+          <a href="contact.html" class="button button__primary">Contact us</a>
         </div>
-        <a href="contact.html">Contact us</a>
       </section>
-      <section>
-        <figure>
-          <img
-            src="assets/images/get-involved_internship_806w.jpg"
-            alt="A young smiling female sitting with a group of interns."
-          />
-        </figure>
-        <h2>Internships</h2>
-        <div>
+      <section class="contribute__interships-section">
+        <div
+          class="contribute__interships-section-content container flex__column"
+        >
+          <figure>
+            <img
+              srcset="
+                assets/images/contribute_internship_1200w.jpg 1200w,
+                assets/images/contribute_internship_600w.jpg   600w
+              "
+              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+              src="assets/images/contribute_internship_fallback.jpg"
+              alt="A young smiling female sitting with a group of interns."
+            />
+          </figure>
+          <h2>Internships</h2>
           <p>
             Are you interested in working in a museum? Do you enjoy the fun and
             excitement of sharing the wonders of nature with people? Well you
@@ -119,8 +138,8 @@
             who are passionate about science and sharing it with the wider
             community.
           </p>
+          <a href="contact.html" class="button button__primary">Contact us</a>
         </div>
-        <a href="contact.html">Contact us</a>
       </section>
     </main>
     <footer>
@@ -156,30 +175,32 @@
           </section>
         </div>
         <div class="footer__newsletter-social flex__column">
-          <section class="flex__column">
-            <h4>Sign up for our Newsletter</h4>
-            <form>
-              <label for="email-subscribe"></label>
-              <input
-                type="email"
-                id="email-subscribe"
-                name="email-subscribe"
-                placeholder="example@email.com"
-                required
-              />
-              <button class="button__primary">Subscribe</button>
-            </form>
-          </section>
-          <section class="footer__social-media flex__column">
-            <h4>Social Media</h4>
-            <ul class="footer__social-media-icons">
-              <li><i class="fa-brands fa-twitter fa-lg"></i></li>
-              <li><i class="fa-brands fa-facebook fa-lg"></i></li>
-              <li><i class="fa-brands fa-instagram fa-lg"></i></li>
-              <li><i class="fa-brands fa-youtube fa-lg"></i></li>
-              <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
-            </ul>
-          </section>
+          <div class="flex__column">
+            <section class="footer__newsletter flex__column">
+              <h4>Sign up for our Newsletter</h4>
+              <form class="flex">
+                <label for="email-subscribe"></label>
+                <input
+                  type="email"
+                  id="email-subscribe"
+                  name="email-subscribe"
+                  placeholder="example@email.com"
+                  required
+                />
+                <button class="button button__primary">Subscribe</button>
+              </form>
+            </section>
+            <section class="footer__social-media flex__column">
+              <h4>Social Media</h4>
+              <ul class="footer__social-media-icons flex">
+                <li><i class="fa-brands fa-twitter fa-lg"></i></li>
+                <li><i class="fa-brands fa-facebook fa-lg"></i></li>
+                <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                <li><i class="fa-brands fa-youtube fa-lg"></i></li>
+                <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
+              </ul>
+            </section>
+          </div>
         </div>
         <div class="footer__bottom-text flex__column">
           <p>All rights reserved</p>

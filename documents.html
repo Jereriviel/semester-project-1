@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="header_content container">
+      <div class="header__content container flex">
         <a href="index.html"
           ><img
             class="header__logo"
@@ -44,7 +44,7 @@
               <a href="contribute.html">Contribute</a>
             </div>
           </nav>
-          <a class="button__cta" href="visit.html">Book now</a>
+          <a class="button button__cta" href="visit.html">Book now</a>
         </div>
       </div>
     </header>
@@ -311,30 +311,32 @@
           </section>
         </div>
         <div class="footer__newsletter-social flex__column">
-          <section class="flex__column">
-            <h4>Sign up for our Newsletter</h4>
-            <form>
-              <label for="email-subscribe"></label>
-              <input
-                type="email"
-                id="email-subscribe"
-                name="email-subscribe"
-                placeholder="example@email.com"
-                required
-              />
-              <button class="button__primary">Subscribe</button>
-            </form>
-          </section>
-          <section class="footer__social-media flex__column">
-            <h4>Social Media</h4>
-            <ul class="footer__social-media-icons">
-              <li><i class="fa-brands fa-twitter fa-lg"></i></li>
-              <li><i class="fa-brands fa-facebook fa-lg"></i></li>
-              <li><i class="fa-brands fa-instagram fa-lg"></i></li>
-              <li><i class="fa-brands fa-youtube fa-lg"></i></li>
-              <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
-            </ul>
-          </section>
+          <div class="flex__column">
+            <section class="footer__newsletter flex__column">
+              <h4>Sign up for our Newsletter</h4>
+              <form class="flex">
+                <label for="email-subscribe"></label>
+                <input
+                  type="email"
+                  id="email-subscribe"
+                  name="email-subscribe"
+                  placeholder="example@email.com"
+                  required
+                />
+                <button class="button button__primary">Subscribe</button>
+              </form>
+            </section>
+            <section class="footer__social-media flex__column">
+              <h4>Social Media</h4>
+              <ul class="footer__social-media-icons flex">
+                <li><i class="fa-brands fa-twitter fa-lg"></i></li>
+                <li><i class="fa-brands fa-facebook fa-lg"></i></li>
+                <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                <li><i class="fa-brands fa-youtube fa-lg"></i></li>
+                <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
+              </ul>
+            </section>
+          </div>
         </div>
         <div class="footer__bottom-text flex__column">
           <p>All rights reserved</p>
