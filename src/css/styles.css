@@ -150,20 +150,32 @@ h5 {
   background-color: var(--secondary-color-normal-active);
 }
 
-.card__small {
+.card {
   background-color: var(--primary-color-light-hover);
-  padding: var(--padding-16);
+}
+
+.card__small {
+  padding: 1rem;
 }
 
 .card__medium {
-  background-color: var(--primary-color-light-hover);
-  padding: var(--padding-32);
+  padding: 1.5rem;
 }
 
-.fake-link {
+.hero {
+  color: var(--neutral-color-light);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: center;
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .fake-link {
   text-decoration: underline;
   cursor: pointer;
-}
+} */
 
 input,
 button,
@@ -190,6 +202,10 @@ select {
     width: fit-content;
   }
 
+  .hero {
+    min-height: 400px;
+  }
+
   .button,
   input,
   button,
@@ -204,6 +220,8 @@ select {
 header {
   background-color: var(--primary-color-dark);
   color: var(--neutral-color-white);
+  top: 0;
+  position: sticky;
 }
 
 .header__content {

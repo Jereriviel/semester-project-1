@@ -1,0 +1,77 @@
+/* || CONTRIBUTE */
+
+.hero__events {
+  background-image: url(../../assets/images/special-events_hero_750w.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.events__professor-section,
+.events__young-stars-club-section {
+  background-color: var(--primary-color-light);
+}
+
+.events__professor-section-content,
+.events__night-museum-section-content,
+.events__young-stars-club-section-content {
+  gap: 1rem;
+  font-size: var(--font-size-mobile-body-medium);
+  line-height: 1.8;
+}
+
+.events__professor-section-content > div,
+.events__night-museum-section-content > div,
+.events__young-stars-club-section-content > div {
+  gap: 1rem;
+}
+
+.events__night-museum-section {
+  background-color: var(--neutral-color-light);
+}
+
+@media (min-width: 600px) {
+  .hero__events {
+    background-image: url(../../assets/images/special-events_hero_2160w.jpg),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .events__professor-section-content,
+  .events__night-museum-section-content,
+  .events__young-stars-club-section-content {
+    font-size: var(--font-size-desktop-body-medium);
+    gap: 1.5rem;
+  }
+
+  .events__young-stars-club-copy {
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .events__professor-section-content,
+  .events__night-museum-section-content,
+  .events__young-stars-club-section-content {
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .events__professor-section-content figure,
+  .events__night-museum-section-content figure,
+  .events__young-stars-club-section-content figure {
+    flex-basis: 50%;
+  }
+
+  .events__professor-section-content div,
+  .events__night-museum-section-content div,
+  .events__young-stars-club-section-content div {
+    flex-basis: 50%;
+  }
+
+  .events__professor-section-content,
+  .events__young-stars-club-section-content {
+    flex-direction: row-reverse;
+  }
+
+  .events__night-museum-section-content {
+    flex-direction: row;
+  }
+}

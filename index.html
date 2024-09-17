@@ -49,8 +49,8 @@
       </div>
     </header>
     <main>
-      <section class="home__hero flex">
-        <div class="home__hero-content container flex__column">
+      <section class="hero hero__home flex">
+        <div class="hero__home-content container flex__column">
           <h1>Welcome to the Community Science Museum</h1>
           <p>
             Come join us at the Community Science Museum where we’re committed
@@ -63,24 +63,28 @@
       </section>
       <section class="home__information-section">
         <div class="home__information-section-content container flex__column">
-          <section class="home__underlined flex__column">
+          <section class="home__information-section-underlined flex__column">
             <h3>Find Us</h3>
             <p>Mølleparken 4</p>
             <p>0459 Oslo</p>
             <a href="https://maps.app.goo.gl/4vLJVMuyXKG7FvoQ9" target="_blank"
-              >View in Google Maps</a
-            >
+              >View in Google Maps
+              <i
+                class="fa-solid fa-arrow-right fa-rotate-by fa-xs"
+                style="--fa-rotate-angle: 315deg"
+              ></i
+            ></a>
           </section>
-          <section class="home__underlined flex__column">
+          <section class="home__information-section-underlined flex__column">
             <h3>Opening Times</h3>
             <p>Today: Open</p>
-            <p>10.00 - 16.00</p>
+            <p><span>10.00 - 16.00</span></p>
             <a href="visit.html">See all opening times</a>
           </section>
           <section class="flex__column">
             <h3>Book Tickets</h3>
-            <p>Entrance is free for all.</p>
-            <p>You can also buy tickets for our<br />hourly guided tour.</p>
+            <p>Entrance is free for all!</p>
+            <p>We also offer an hourly guided tour.</p>
             <a href="visit.html" class="button button__cta"
               >Book your tickets here</a
             >
@@ -91,74 +95,72 @@
         <div class="container flex__column">
           <h2>Special Events and Exhibitions</h2>
           <div class="home__special-events-section-content flex__column">
-            <article>
-              <figure>
-                <img
-                  srcset="
-                    assets/images/special-events_professor_1200w.jpg 1200w,
-                    assets/images/special-events_professor_600w.jpg   600w
-                  "
-                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
-                  src="assets/images/special-events_professor_fallback.jpg"
-                  alt="Headshot of Professor Sheila Widnall."
-                />
-              </figure>
-              <section class="card__small flex__column">
-                <h4>Visiting Professor of Aeronautics</h4>
-                <p>
-                  It is our pleasure to announce that Prof Sheila Widnall from
-                  the Massachusetts Institute of Technology will be delivering 3
-                  lectures on the development of aeronautics and where the
-                  future lies in this exciting ‘space’.
-                </p>
-              </section>
-            </article>
-            <article>
-              <figure>
-                <img
-                  srcset="
-                    assets/images/special-events_night-museum_1200w.jpg 1200w,
-                    assets/images/special-events_night-museum_600w.jpg   600w
-                  "
-                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
-                  src="assets/images/special-events_night-museum_fallback.jpg"
-                  alt="Dimly lit museum space with a woman looking at an elephant on display."
-                />
-              </figure>
-              <section class="card__small flex__column">
-                <h4>Night in the Museum</h4>
-                <p>
-                  Get your family together for an exciting night in the museum
-                  as you sleep over beside dinosaurs and science displays. Bring
-                  your own sleeping bag and get ready to rough it as we go
-                  exploring the wonders of science.
-                </p>
-              </section>
-            </article>
-            <article>
-              <figure>
-                <img
-                  srcset="
-                    assets/images/special-events_energica_1200w.jpg 1200w,
-                    assets/images/special-events_energica_600w.jpg   600w
-                  "
-                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
-                  src="assets/images/special-events_energica_fallback.jpg"
-                  alt="A model of multiple wind turbines in front of lit up city buildings."
-                />
-              </figure>
-              <section class="card__small flex__column">
-                <h4>Energetica Exhibition on Loan</h4>
-                <p>
-                  On loan from the NEMO Science Museum in Amsterdam, the
-                  Energetica exhibition is coming to the Community Science
-                  Museum. It’s a series of installations that allow visitors to
-                  experience the power of the elements as we harness them. From
-                  solar energy powering lighting, to ‘Wind Island’ that shows
-                  how turbines are able to use and control wind to create power.
-                </p>
-              </section>
-            </article>
+            <a href="events.html">
+              <article class="card">
+                <figure>
+                  <img
+                    srcset="
+                      assets/images/special-events_professor_1200w.jpg 1200w,
+                      assets/images/special-events_professor_600w.jpg   600w
+                    "
+                    sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                    src="assets/images/special-events_professor_fallback.jpg"
+                    alt="Headshot of Professor Sheila Widnall."
+                  />
+                </figure>
+                <section class="card__medium flex__column">
+                  <h4>Visiting Professor of Aeronautics</h4>
+                  <p>
+                    Attend a fascinating lecture from Prof Sheila Widnall on the
+                    development of aeronautics.
+                  </p>
+                </section>
+              </article>
+            </a>
+            <a href="events.html">
+              <article class="card">
+                <figure>
+                  <img
+                    srcset="
+                      assets/images/special-events_night-museum_1200w.jpg 1200w,
+                      assets/images/special-events_night-museum_600w.jpg   600w
+                    "
+                    sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                    src="assets/images/special-events_night-museum_fallback.jpg"
+                    alt="Dimly lit museum space with a woman looking at an elephant on display."
+                  />
+                </figure>
+                <section class="card__medium flex__column">
+                  <h4>Night in the Museum</h4>
+                  <p>
+                    Get your family together for an exciting sleepover in the
+                    museum.
+                  </p>
+                </section>
+              </article>
+            </a>
+            <a href="exhibitions.html">
+              <article class="card">
+                <figure>
+                  <img
+                    srcset="
+                      assets/images/special-events_energica_1200w.jpg 1200w,
+                      assets/images/special-events_energica_600w.jpg   600w
+                    "
+                    sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                    src="assets/images/special-events_energica_fallback.jpg"
+                    alt="A model of multiple wind turbines in front of lit up city buildings."
+                  />
+                </figure>
+                <section class="card__medium flex__column">
+                  <h4>Energetica Exhibition on Loan</h4>
+                  <p>
+                    The Energetica exhibition is coming soon to the Community
+                    Science Museum.
+                  </p>
+                </section>
+              </article>
+            </a>
           </div>
         </div>
       </section>
@@ -187,7 +189,7 @@
             <ul>
               <li><a href="contact.html">Contact Us</a></li>
               <li><a href="contact.html">Work for Us</a></li>
-              <li><a href="visit.html">Accessibility</a></li>
+              <li><a href="events.html">Events</a></li>
               <li><a href="exhibitions.html">Exhibitions</a></li>
               <li><a href="explore.html">Explore</a></li>
             </ul>

@@ -19,7 +19,6 @@ svg {
   max-width: 100%;
 }
 
-p,
 h1,
 h2,
 h3,
@@ -67,14 +66,7 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-  text-wrap: balance;
-}
-
-h1,
-h2,
-h3,
-h4,
+h5,
 button,
 input,
 label {

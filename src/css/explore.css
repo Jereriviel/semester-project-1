@@ -1,1 +1,73 @@
 /* || EXPLORE */
+
+.hero__explore {
+  background-image: url(../../assets/images/explore_hero_750w.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.explore__kids-section,
+.explore__researchers-section {
+  background-color: var(--primary-color-light);
+}
+
+.explore__kids-section-content,
+.explore__teachers-section-content,
+.explore__researchers-section-content {
+  gap: 1rem;
+  font-size: var(--font-size-mobile-body-medium);
+  line-height: 1.8;
+}
+
+.explore__kids-section-content div,
+.explore__teachers-section-content div,
+.explore__researchers-section-content div {
+  gap: 1rem;
+}
+
+.explore__teachers-section {
+  background-color: var(--neutral-color-light);
+}
+
+@media (min-width: 600px) {
+  .hero__explore {
+    background-image: url(../../assets/images/explore_hero_2160w.jpg),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .explore__kids-section-content,
+  .explore__teachers-section-content,
+  .explore__researchers-section-content {
+    font-size: var(--font-size-desktop-body-medium);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .explore__kids-section-content,
+  .explore__teachers-section-content,
+  .explore__researchers-section-content {
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .explore__kids-section-content figure,
+  .explore__teachers-section-content figure,
+  .explore__researchers-section-content figure {
+    flex-basis: 50%;
+  }
+
+  .explore__kids-section-content div,
+  .explore__teachers-section-content div,
+  .explore__researchers-section-content div {
+    flex-basis: 50%;
+  }
+
+  .explore__kids-section-content,
+  .explore__researchers-section-content {
+    flex-direction: row-reverse;
+  }
+
+  .explore__teachers-section-content {
+    flex-direction: row;
+  }
+}

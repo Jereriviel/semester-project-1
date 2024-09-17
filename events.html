@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="Description"
-      content="Find information about the Community Science Museum's Admission, Opening times, Location, Accessibility, Food and Drink, and Shop here."
+      content="Read more about the Community Science Museum's special events here.'"
     />
-    <title>Community Science Museum | Visit</title>
+    <title>Community Science Museum | Special Events</title>
     <link rel="stylesheet" href="src/css/styles.css" />
-    <link rel="stylesheet" href="src/css/visit.css" />
+    <link rel="stylesheet" href="src/css/events.css" />
     <link rel="icon" href="assets/logo/csm_favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,147 +49,93 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1>Visit</h1>
+      <section class="hero hero__events flex">
+        <h1>Special Events</h1>
       </section>
-      <section>
-        <h2>Admission</h2>
-        <section>
-          <h3>Entrance</h3>
-          <p>At the Community Science Museum entrance is free for all.</p>
-        </section>
-        <section>
-          <h3>Guided Tours</h3>
-          <p>
-            There are guided tours of the museum that leave every hour. These
-            tours are 70 NOK per person and include a handy printed guide of the
-            museum.
-          </p>
-        </section>
-        <section>
-          <h3>Groups</h3>
-          <p>
-            If you would like to organise a guided tour for your group of 6 or
-            more people, please contact us to arrange the tour.
-          </p>
-        </section>
-        <div>
-          <a href="#">Book your ticket</a>
-          <a href="contact.html">Contact us</a>
+      <section class="events__professor-section">
+        <div class="events__professor-section-content container flex__column">
+          <figure>
+            <img
+              srcset="
+                assets/images/special-events_professor_1200w.jpg 1200w,
+                assets/images/special-events_professor_600w.jpg   600w
+              "
+              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+              src="assets/images/special-events_professor_fallback.jpg"
+              alt="Headshot of Professor Sheila Widnall."
+            />
+          </figure>
+          <div class="flex__column">
+            <h2>Visiting Professor of Aeronautics</h2>
+            <p>
+              It is our pleasure to announce that Prof Sheila Widnall from the
+              Massachusetts Institute of Technology will be delivering 3
+              lectures on the development of aeronautics and where the future
+              lies in this exciting ‘space’.
+            </p>
+            <a href="#" class="button button__primary">Sign up here</a>
+          </div>
         </div>
       </section>
-      <section>
-        <h2>Opening Times</h2>
-        <div>
-          <div>
-            <h4>Monday</h4>
-            <h4>Closed</h4>
-          </div>
-          <div>
-            <h4>Tuesday</h4>
-            <h4>10:00 - 16:00</h4>
-          </div>
-          <div>
-            <h4>Wednesday</h4>
-            <h4>10:00 - 16:00</h4>
-          </div>
-          <div>
-            <h4>Thursday</h4>
-            <h4>10:00 - 16:00</h4>
-          </div>
-          <div>
-            <h4>Friday</h4>
-            <h4>10:00 - 19:00</h4>
-          </div>
-          <div>
-            <h4>Saturday</h4>
-            <h4>09:00 - 16:00</h4>
-          </div>
-          <div>
-            <h4>Sunday</h4>
-            <h4>09:00 - 13:00</h4>
-          </div>
-        </div>
-        <!-- <table>
-          <tr>
-            <td><h4>Monday</h4></td>
-            <td><h4>Closed</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Tuesday</h4></td>
-            <td><h4>10:00 - 16:00</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Wednesday</h4></td>
-            <td><h4>10:00 - 16:00</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Thursday</h4></td>
-            <td><h4>10:00 - 16:00</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Friday</h4></td>
-            <td><h4>10:00 - 19:00</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Saturday</h4></td>
-            <td><h4>09:00 - 16:00</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Sunday</h4></td>
-            <td><h4>09:00 - 13:00</h4></td>
-          </tr>
-        </table> -->
-        <div>
-          <p><span>Shop:</span> Same opening hours as the museum.</p>
-          <p><span>Café:</span> Same opening hours as the museum.</p>
-          <p>
-            <span>Public holidays:</span> The museum is closed on Christmas Eve,
-            Christmas Day, New Year's Eve, New Year's Day and May 17th.
-          </p>
-        </div>
-      </section>
-      <section>
-        <h2>Location</h2>
-        <p>Møllerparken 4</p>
-        <p>0459 Oslo</p>
-        <p>
-          The museum is located in Møllerparken, in the center of Oslo City.
-        </p>
-        <a href="https://maps.app.goo.gl/4vLJVMuyXKG7FvoQ9" target="_blank"
-          >View in Google Maps</a
+      <section class="events__night-museum-section">
+        <div
+          class="events__night-museum-section-content container flex__column"
         >
-        <figure>
-          <img
-            src="assets/images/visit_location_806w.jpg"
-            alt="Zoomed in map pin pointing Møllerparken 4 in Oslo City."
-          />
-        </figure>
+          <figure>
+            <img
+              srcset="
+                assets/images/special-events_night-museum_1200w.jpg 1200w,
+                assets/images/special-events_night-museum_600w.jpg   600w
+              "
+              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+              src="assets/images/special-events_night-museum_fallback.jpg"
+              alt="Dimly lit museum space with a woman looking at an elephant on display."
+            />
+          </figure>
+          <div class="flex__column">
+            <h2>Night in the Museum</h2>
+            <p>
+              Get your family together for an exciting night in the museum as
+              you sleep over beside dinosaurs and science displays. Bring your
+              own sleeping bag and get ready to rough it as we go exploring the
+              wonders of science.
+            </p>
+            <a href="#" class="button button__primary">Sign up here</a>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>Good to know</h2>
-        <section>
-          <h3>Accessibility</h3>
-          <p>
-            The museum has wheelchair accessibility ramps. It also has audio
-            guides and braille display signs for the visually impaired.
-          </p>
-        </section>
-        <section>
-          <h3>Food and Drink</h3>
-          <p>
-            There is a café attached to the museum where you can get light
-            lunches, soft drinks, coffee, snacks and more.
-          </p>
-        </section>
-        <section>
-          <h3>Shop</h3>
-          <p>
-            Our shop offers a range of memorabilia from the museum as well as
-            great gifts and activity packs that allow you to continue to explore
-            science even after you’ve left the museum.
-          </p>
-        </section>
+      <section class="events__young-stars-club-section">
+        <div
+          class="events__young-stars-club-section-content container flex__column"
+        >
+          <figure>
+            <img
+              srcset="
+                assets/images/young-stars-club_1200w.jpg 1200w,
+                assets/images/young-stars-club_600w.jpg   600w
+              "
+              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+              src="assets/images/young-stars-club_fallback.jpg"
+              alt="A group of children learning about electricity"
+            />
+          </figure>
+          <div class="flex__column">
+            <h2>Young Stars Club</h2>
+            <div class="events__young-stars-club-copy flex__column">
+              <p>Come explore and experiment with our team of experts!</p>
+              <p>
+                The museum is excited to present the Young Stars Club where
+                children ages 7 - 15 can join in on learning and having fun with
+                the museums own expert team. There will be different topics
+                every meeting.
+              </p>
+              <p>
+                The meetings are held every Saturday between 10:00 and 13:00.
+              </p>
+              <p>Participation is free, sign up at the reception desk.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>

@@ -1,29 +1,73 @@
 /* || CONTRIBUTE */
 
-.contribute__hero {
+.hero__contribute {
   background-image: url(../../assets/images/contribute_hero_750w.jpg),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  min-height: 200px;
-  color: var(--neutral-color-light);
-  justify-content: center;
-  align-items: center;
 }
 
 .contribute__support-section,
-.contribute__interships-section {
+.contribute__internships-section {
   background-color: var(--primary-color-light);
 }
 
 .contribute__support-section-content,
 .contribute__volunteer-section-content,
-.contribute__interships-section-content {
+.contribute__internships-section-content {
   gap: 1rem;
   font-size: var(--font-size-mobile-body-medium);
+  line-height: 1.8;
+}
+
+.contribute__support-section-content div,
+.contribute__volunteer-section-content div,
+.contribute__internships-section-content div {
+  gap: 1rem;
 }
 
 .contribute__volunteer-section {
   background-color: var(--neutral-color-light);
+}
+
+@media (min-width: 600px) {
+  .hero__contribute {
+    background-image: url(../../assets/images/contribute_hero_2160w.jpg),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .contribute__support-section-content,
+  .contribute__volunteer-section-content,
+  .contribute__internships-section-content {
+    font-size: var(--font-size-desktop-body-medium);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .contribute__support-section-content,
+  .contribute__volunteer-section-content,
+  .contribute__internships-section-content {
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .contribute__support-section-content figure,
+  .contribute__volunteer-section-content figure,
+  .contribute__internships-section-content figure {
+    flex-basis: 50%;
+  }
+
+  .contribute__support-section-content div,
+  .contribute__volunteer-section-content div,
+  .contribute__internships-section-content div {
+    flex-basis: 50%;
+  }
+
+  .contribute__support-section-content,
+  .contribute__internships-section-content {
+    flex-direction: row-reverse;
+  }
+
+  .contribute__volunteer-section-content {
+    flex-direction: row;
+  }
 }
