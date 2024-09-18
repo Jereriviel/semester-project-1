@@ -1,1 +1,92 @@
 /* || VISIT */
+.hero__visit {
+  background-image: url(../../assets/images/visit_hero_750w.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.visit__admission-section,
+.visit__good-to-know-section {
+  background-color: var(--neutral-color-light);
+}
+
+.visit__opening-times-section,
+.visit__location-section {
+  background-color: var(--primary-color-light);
+}
+
+.visit__admission-section-content,
+.visit__opening-times-section-content,
+.visit__location-section-content,
+.visit__good-to-know-section-content {
+  font-size: var(--font-size-mobile-body-medium);
+  gap: 2rem;
+}
+
+.visit__admission-section-content section,
+.visit__good-to-know-section-content section,
+.visit__admission-section-buttons,
+.visit__opening-times-special {
+  gap: 1rem;
+}
+
+.visit__opening-times-table {
+  gap: 1.5rem;
+  font-size: var(--font-size-mobile-h4);
+  font-weight: 600;
+  max-width: 800px;
+}
+
+.visit__opening-times-table div {
+  justify-content: space-between;
+}
+
+.visit__opening-times-special span,
+.visit__location-section span {
+  font-weight: 600;
+}
+
+.visit__location-section a {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .hero__visit {
+    background-image: url(../../assets/images/visit_hero_1920w.jpg),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .visit__admission-section-content,
+  .visit__opening-times-section-content,
+  .visit__location-section-content,
+  .visit__good-to-know-section-content {
+    font-size: var(--font-size-desktop-body-medium);
+  }
+
+  .visit__admission-section-buttons {
+    flex-direction: row;
+  }
+
+  .visit__admission-section-buttons a {
+    flex-basis: 50%;
+    max-width: 400px;
+  }
+
+  .visit__opening-times-table {
+    font-size: var(--font-size-desktop-h4);
+  }
+}
+
+@media (min-width: 1200px) {
+  .visit__opening-times-section {
+    background-color: var(--neutral-color-light);
+  }
+
+  .visit__good-to-know-section {
+    background-color: var(--primary-color-light);
+  }
+
+  .visit__admission-opening-hours,
+  .visit__location-good-to-know {
+    display: flex;
+  }
+}

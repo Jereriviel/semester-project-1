@@ -28,6 +28,10 @@
   background-color: var(--neutral-color-light);
 }
 
+.events__young-stars-club-copy {
+  gap: 0.5rem;
+}
+
 @media (min-width: 600px) {
   .hero__events {
     background-image: url(../../assets/images/special-events_hero_2160w.jpg),
@@ -42,7 +46,7 @@
   }
 
   .events__young-stars-club-copy {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 }
 

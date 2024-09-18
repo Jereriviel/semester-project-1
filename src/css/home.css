@@ -132,6 +132,7 @@
 
   .home__special-events-section section {
     gap: 0.5rem;
+    line-height: 1.5;
   }
 
   .home__young-stars-club-section {

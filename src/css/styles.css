@@ -108,6 +108,7 @@ h5 {
   height: auto;
   width: auto;
   display: block;
+  cursor: pointer;
 }
 
 .button__primary {
@@ -125,9 +126,10 @@ h5 {
 .button__secondary {
   background-color: var(--neutral-color-light);
   color: var(--neutral-color-black);
-  outline-style: inset;
+  outline-style: solid;
   outline-width: 2px;
   outline-color: var(--primary-color-normal);
+  outline-offset: -2px;
 }
 
 .button__secondary:hover {
@@ -172,11 +174,6 @@ h5 {
   align-items: center;
 }
 
-/* .fake-link {
-  text-decoration: underline;
-  cursor: pointer;
-} */
-
 input,
 button,
 textarea,
@@ -219,7 +216,7 @@ select {
 
 header {
   background-color: var(--primary-color-dark);
-  color: var(--neutral-color-white);
+  color: var(--neutral-color-light);
   top: 0;
   position: sticky;
 }
@@ -277,7 +274,7 @@ nav {
   display: block;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .header__content {
     padding: var(--padding-desktop-header);
   }
@@ -334,7 +331,7 @@ nav {
 
 footer {
   background-color: var(--primary-color-dark);
-  color: var(--neutral-color-white);
+  color: var(--neutral-color-light);
   font-size: var(--font-size-mobile-body-medium);
 }
 

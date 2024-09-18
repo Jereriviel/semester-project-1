@@ -41,6 +41,7 @@
               <a href="visit.html">Visit</a>
               <a href="explore.html">Explore</a>
               <a href="exhibitions.html">Exhibitions</a>
+              <a href="events.html">Events</a>
               <a href="contribute.html">Contribute</a>
             </div>
           </nav>
@@ -49,171 +50,179 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero hero__exhibitions flex">
         <h1>Exhibition Spaces</h1>
       </section>
-      <section>
-        <h2>Special Events and Exhibitions</h2>
-        <section>
-          <figure>
-            <img
-              src="assets/images/special-events_professor_400w.jpg"
-              alt="Headshot of Professor Sheila Widnall."
-            />
-          </figure>
-          <details>
-            <summary><h4>Visiting Professor of Aeronautics</h4></summary>
-            <p>
-              It is our pleasure to announce that Prof Sheila Widnall from the
-              Massachusetts Institute of Technology will be delivering 3
-              lectures on the development of aeronautics and where the future
-              lies in this exciting ‘space’.
-            </p>
-          </details>
-        </section>
-        <section>
-          <figure>
-            <img
-              src="assets/images/special-events_night-museum_400w.jpg"
-              alt="Dimly lit museum space with a woman looking at an elephant on display."
-            />
-          </figure>
-          <details>
-            <summary><h4>Night in the Museum</h4></summary>
-            <p>
-              Get your family together for an exciting night in the museum as
-              you sleep over beside dinosaurs and science displays. Bring your
-              own sleeping bag and get ready to rough it as we go exploring the
-              wonders of science.
-            </p>
-          </details>
-        </section>
-        <section>
-          <figure>
-            <img
-              src="assets/images/special-events_energica_600w.jpg"
-              alt="A model of multiple wind turbines in front of lit up city buildings."
-            />
-          </figure>
-          <h4>Energetica Exhibition on Loan</h4>
-          <div>
-            <p>
-              On loan from the NEMO Science Museum in Amsterdam, the Energetica
-              exhibition is coming to the Community Science Museum. It’s a
-              series of installations that allow visitors to experience the
-              power of the elements as we harness them. From solar energy
-              powering lighting, to ‘Wind Island’ that shows how turbines are
-              able to use and control wind to create power.
-            </p>
-          </div>
-        </section>
+      <section class="exhibitions__upcoming-section">
+        <div
+          class="exhibitions__upcoming-section-content container flex__column"
+        >
+          <h2>Upcoming Exhibitions</h2>
+          <section class="flex__column">
+            <figure>
+              <img
+                srcset="
+                  assets/images/special-events_energica_1200w.jpg 1200w,
+                  assets/images/special-events_energica_600w.jpg   600w
+                "
+                sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                src="assets/images/special-events_energica_fallback.jpg"
+                alt="A model of multiple wind turbines in front of lit up city buildings."
+              />
+            </figure>
+            <div class="exhbitions__card flex__column">
+              <h3>Energetica Exhibition on Loan</h3>
+              <p>
+                On loan from the NEMO Science Museum in Amsterdam, the
+                Energetica exhibition is coming to the Community Science Museum.
+                It’s a series of installations that allow visitors to experience
+                the power of the elements as we harness them. From solar energy
+                powering lighting, to ‘Wind Island’ that shows how turbines are
+                able to use and control wind to create power.
+              </p>
+            </div>
+          </section>
+        </div>
       </section>
-      <section>
-        <h2>Our Permanent Exhibitions</h2>
-        <section>
-          <figure>
-            <img
-              src="assets/images/exhibitions_cosmology_806w.jpg"
-              alt="A dark room with blue lights from the floor lighting up various cosmology innstallations."
-            />
-          </figure>
-          <h4>Cosmology</h4>
-          <div>
-            <p>
-              Explore the wonders of our cosmos. Our fantastic exhibition, ‘The
-              Sky Above Us’, explores the night sky and what we can see and know
-              about the universe around us. We’ll locate the various
-              constellations and galaxies that can be seen and learn a bit about
-              the early navigators who used the stars to travel by.
-            </p>
-            <p>
-              Follow the journey of our solar exploration: from early Arab
-              traders, to Galileo’s telescope, to the latest exploration of the
-              planets in our solar system.
-            </p>
+      <section class="exhibitions__permanent-section">
+        <div class="container flex__column">
+          <h2>Our Permanent Exhibitions</h2>
+          <div class="exhibitions__permanent-section-content flex__column">
+            <section>
+              <figure>
+                <img
+                  srcset="
+                    assets/images/exhibitions_cosmology_1200w.jpg 1200w,
+                    assets/images/exhibitions_cosmology_600w.jpg   600w
+                  "
+                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                  src="assets/images/exhibitions_cosmology_fallback.jpg"
+                  alt="A dark room with blue lights from the floor lighting up various cosmology innstallations."
+                />
+              </figure>
+              <div class="exhbitions__card flex__column">
+                <h3>Cosmology</h3>
+                <p>
+                  Explore the wonders of our cosmos. Our fantastic exhibition,
+                  ‘The Sky Above Us’, explores the night sky and what we can see
+                  and know about the universe around us. We’ll locate the
+                  various constellations and galaxies that can be seen and learn
+                  a bit about the early navigators who used the stars to travel
+                  by.
+                </p>
+                <p>
+                  Follow the journey of our solar exploration: from early Arab
+                  traders, to Galileo’s telescope, to the latest exploration of
+                  the planets in our solar system.
+                </p>
+              </div>
+            </section>
+            <section>
+              <figure>
+                <img
+                  srcset="
+                    assets/images/exhibitions_evolution_1200w.jpg 1200w,
+                    assets/images/exhibitions_evolution_600w.jpg   600w
+                  "
+                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                  src="assets/images/exhibitions_evolution_fallback.jpg"
+                  alt="A skeleton of a mammoth on display."
+                />
+              </figure>
+              <div class="exhbitions__card flex__column">
+                <h3>Evolution</h3>
+                <p>
+                  For centuries, philosophers and scientists have wrestled with
+                  the question of our origins. Where do we come from and how did
+                  we get here? Since Darwin proposed his theory of evolution we
+                  have had a framework for exploring and understanding our place
+                  in this world.
+                </p>
+                <p>
+                  Discover the origins of life on this planet and how the
+                  species we know today have evolved our time. You can also take
+                  some time to meet a few of the creatures who didn’t survive,
+                  including our Woolly Mammoth, the Dodos, and a number of
+                  dinosaurs too.
+                </p>
+              </div>
+            </section>
+            <section>
+              <figure>
+                <img
+                  srcset="
+                    assets/images/exhibitions_biology_1200w.jpg 1200w,
+                    assets/images/exhibitions_biology_600w.jpg   600w
+                  "
+                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                  src="assets/images/exhibitions_biology_fallback.jpg"
+                  alt="A model of a human heart on display."
+                />
+              </figure>
+              <div class="exhbitions__card flex__column">
+                <h3>Biology and Medicine</h3>
+                <p>
+                  From micro-organisms to the human body, major breakthroughs in
+                  biology are offering us unique insights into the great wonders
+                  of the tiny world.
+                </p>
+                <p>
+                  For many people their life expectancy is much longer and their
+                  quality of life much improved, thanks to the growth of our
+                  understanding of medicine. Over a series of exhibits we
+                  explore the history of medicine and take a look at some major
+                  breakthroughs including the discovery of penicillin and the
+                  first heart transplant.
+                </p>
+              </div>
+            </section>
+            <section>
+              <figure>
+                <img
+                  srcset="
+                    assets/images/exhibitions_robotics_1200w.jpg 1200w,
+                    assets/images/exhibitions_robotics_600w.jpg   600w
+                  "
+                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                  src="assets/images/exhibitions_robotics_fallback.jpg"
+                  alt="A yellow Boston Dynamic robot with four legs on display."
+                />
+              </figure>
+              <div class="exhbitions__card flex__column">
+                <h3>Robotics and AI</h3>
+                <p>
+                  The information revolution is here and robotics and artificial
+                  intelligence are the science of the future. From useful home
+                  applications of AI to industrial uses of robotics, the future
+                  is here. You can even say hello and shake the hand of Rob the
+                  Robot.
+                </p>
+              </div>
+            </section>
+            <section>
+              <figure>
+                <img
+                  srcset="
+                    assets/images/exhibitions_ecology_1200w.jpg 1200w,
+                    assets/images/exhibitions_ecology_600w.jpg   600w
+                  "
+                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                  src="assets/images/exhibitions_ecology_fallback.jpg"
+                  alt="A model of water pipes on the ground alongside a river."
+                />
+              </figure>
+              <div class="exhbitions__card flex__column">
+                <h3>Ecology</h3>
+                <p>
+                  As we learn more and more of the impact humans are having on
+                  the planet, the more important it becomes that scientists
+                  explore how to create a sustainable future not just for humans
+                  but for the whole planet.
+                </p>
+              </div>
+            </section>
           </div>
-        </section>
-        <section>
-          <figure>
-            <img
-              src="assets/images/exhibitions_evolution_806w.jpg"
-              alt="A skeleton of a mammoth on display."
-            />
-          </figure>
-          <h4>Evolution</h4>
-          <div>
-            <p>
-              For centuries, philosophers and scientists have wrestled with the
-              question of our origins. Where do we come from and how did we get
-              here? Since Darwin proposed his theory of evolution we have had a
-              framework for exploring and understanding our place in this world.
-            </p>
-            <p>
-              Discover the origins of life on this planet and how the species we
-              know today have evolved our time. You can also take some time to
-              meet a few of the creatures who didn’t survive, including our
-              Woolly Mammoth, the Dodos, and a number of dinosaurs too.
-            </p>
-          </div>
-        </section>
-        <section>
-          <figure>
-            <img
-              src="assets/images/exhibitions_biology_806w.jpg"
-              alt="A model of a human heart on display."
-            />
-          </figure>
-          <h4>Biology and Medicine</h4>
-          <div>
-            <p>
-              From micro-organisms to the human body, major breakthroughs in
-              biology are offering us unique insights into the great wonders of
-              the tiny world.
-            </p>
-            <p>
-              For many people their life expectancy is much longer and their
-              quality of life much improved, thanks to the growth of our
-              understanding of medicine. Over a series of exhibits we explore
-              the history of medicine and take a look at some major
-              breakthroughs including the discovery of penicillin and the first
-              heart transplant.
-            </p>
-          </div>
-        </section>
-        <section>
-          <figure>
-            <img
-              src="assets/images/exhibitions_robotics_806w.jpg"
-              alt="A yellow Boston Dynamic robot with four legs on display."
-            />
-          </figure>
-          <h4>Robotics and AI</h4>
-          <div>
-            <p>
-              The information revolution is here and robotics and artificial
-              intelligence are the science of the future. From useful home
-              applications of AI to industrial uses of robotics, the future is
-              here. You can even say hello and shake the hand of Rob the Robot.
-            </p>
-          </div>
-        </section>
-        <section>
-          <figure>
-            <img
-              src="assets/images/exhibitions_ecology_806w.jpg"
-              alt="A model of water pipes on the ground alongside a river."
-            />
-          </figure>
-          <h4>Ecology</h4>
-          <div>
-            <p>
-              As we learn more and more of the impact humans are having on the
-              planet, the more important it becomes that scientists explore how
-              to create a sustainable future not just for humans but for the
-              whole planet.
-            </p>
-          </div>
-        </section>
+        </div>
       </section>
     </main>
     <footer>

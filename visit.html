@@ -41,6 +41,7 @@
               <a href="visit.html">Visit</a>
               <a href="explore.html">Explore</a>
               <a href="exhibitions.html">Exhibitions</a>
+              <a href="events.html">Events</a>
               <a href="contribute.html">Contribute</a>
             </div>
           </nav>
@@ -49,148 +50,147 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero hero__visit flex">
         <h1>Visit</h1>
       </section>
-      <section>
-        <h2>Admission</h2>
-        <section>
-          <h3>Entrance</h3>
-          <p>At the Community Science Museum entrance is free for all.</p>
+      <div class="visit__admission-opening-hours">
+        <section class="visit__admission-section">
+          <div class="visit__admission-section-content container flex__column">
+            <h2>Admission</h2>
+            <section class="flex__column">
+              <h3>Entrance</h3>
+              <p>At the Community Science Museum entrance is free for all.</p>
+            </section>
+            <section class="flex__column">
+              <h3>Guided Tours</h3>
+              <p>
+                There are guided tours of the museum that leave every hour.
+                These tours are 70 NOK per person and include a handy printed
+                guide of the museum.
+              </p>
+            </section>
+            <section class="flex__column">
+              <h3>Groups</h3>
+              <p>
+                If you would like to organise a guided tour for your group of 6
+                or more people, please contact us to arrange the tour.
+              </p>
+            </section>
+            <div class="visit__admission-section-buttons flex__column">
+              <a href="#" class="button button__cta">Book your ticket</a>
+              <a href="contact.html" class="button button__secondary"
+                >Contact us</a
+              >
+            </div>
+          </div>
         </section>
-        <section>
-          <h3>Guided Tours</h3>
-          <p>
-            There are guided tours of the museum that leave every hour. These
-            tours are 70 NOK per person and include a handy printed guide of the
-            museum.
-          </p>
+        <section class="visit__opening-times-section">
+          <div
+            class="visit__opening-times-section-content container flex__column"
+          >
+            <h2>Opening Times</h2>
+            <div class="visit__opening-times-table flex__column">
+              <div class="flex">
+                <p>Monday</p>
+                <p>Closed</p>
+              </div>
+              <div class="flex">
+                <p>Tuesday</p>
+                <p>10:00 - 16:00</p>
+              </div>
+              <div class="flex">
+                <p>Wednesday</p>
+                <p>10:00 - 16:00</p>
+              </div>
+              <div class="flex">
+                <p>Thursday</p>
+                <p>10:00 - 16:00</p>
+              </div>
+              <div class="flex">
+                <p>Friday</p>
+                <p>10:00 - 19:00</p>
+              </div>
+              <div class="flex">
+                <p>Saturday</p>
+                <p>09:00 - 16:00</p>
+              </div>
+              <div class="flex">
+                <p>Sunday</p>
+                <p>09:00 - 13:00</p>
+              </div>
+            </div>
+            <div class="visit__opening-times-special flex__column">
+              <p><span>Shop: </span>Same opening hours as the museum.</p>
+              <p><span>Café: </span>Same opening hours as the museum.</p>
+              <p>
+                <span>Public holidays: </span>The museum is closed on Christmas
+                Eve, Christmas Day, New Year's Eve, New Year's Day and May 17th.
+              </p>
+            </div>
+          </div>
         </section>
-        <section>
-          <h3>Groups</h3>
-          <p>
-            If you would like to organise a guided tour for your group of 6 or
-            more people, please contact us to arrange the tour.
-          </p>
+      </div>
+      <div class="visit__location-good-to-know">
+        <section class="visit__good-to-know-section">
+          <div
+            class="visit__good-to-know-section-content container flex__column"
+          >
+            <h2>Good to know</h2>
+            <section class="flex__column">
+              <h3>Accessibility</h3>
+              <p>
+                The museum has wheelchair accessibility ramps. It also has audio
+                guides and braille display signs for the visually impaired.
+              </p>
+            </section>
+            <section class="flex__column">
+              <h3>Food and Drink</h3>
+              <p>
+                There is a café attached to the museum where you can get light
+                lunches, soft drinks, coffee, snacks and more.
+              </p>
+            </section>
+            <section class="flex__column">
+              <h3>Shop</h3>
+              <p>
+                Our shop offers a range of memorabilia from the museum as well
+                as great gifts and activity packs that allow you to continue to
+                explore science even after you’ve left the museum.
+              </p>
+            </section>
+          </div>
         </section>
-        <div>
-          <a href="#">Book your ticket</a>
-          <a href="contact.html">Contact us</a>
-        </div>
-      </section>
-      <section>
-        <h2>Opening Times</h2>
-        <div>
-          <div>
-            <h4>Monday</h4>
-            <h4>Closed</h4>
+        <section class="visit__location-section">
+          <div class="visit__location-section-content container flex__column">
+            <h2>Location</h2>
+            <div>
+              <p><span>Møllerparken 4</span></p>
+              <p><span>0459 Oslo</span></p>
+            </div>
+            <p>
+              The museum is located in Møllerparken, in the center of Oslo City.
+            </p>
+            <a href="https://maps.app.goo.gl/4vLJVMuyXKG7FvoQ9" target="_blank"
+              >View in Google Maps
+              <i
+                class="fa-solid fa-arrow-right fa-rotate-by fa-xs"
+                style="--fa-rotate-angle: 315deg"
+              ></i
+            ></a>
+            <figure>
+              <img
+                srcset="
+                  assets/images/visit_location_1200w.jpg 1200w,
+                  assets/images/visit_location_600w.jpg   600w
+                "
+                sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px"
+                src="assets/images/visit_location_fallback.jpg"
+                alt="Zoomed in map pin pointing to Møllerparken 4 in Oslo City."
+              />
+            </figure>
           </div>
-          <div>
-            <h4>Tuesday</h4>
-            <h4>10:00 - 16:00</h4>
-          </div>
-          <div>
-            <h4>Wednesday</h4>
-            <h4>10:00 - 16:00</h4>
-          </div>
-          <div>
-            <h4>Thursday</h4>
-            <h4>10:00 - 16:00</h4>
-          </div>
-          <div>
-            <h4>Friday</h4>
-            <h4>10:00 - 19:00</h4>
-          </div>
-          <div>
-            <h4>Saturday</h4>
-            <h4>09:00 - 16:00</h4>
-          </div>
-          <div>
-            <h4>Sunday</h4>
-            <h4>09:00 - 13:00</h4>
-          </div>
-        </div>
-        <!-- <table>
-          <tr>
-            <td><h4>Monday</h4></td>
-            <td><h4>Closed</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Tuesday</h4></td>
-            <td><h4>10:00 - 16:00</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Wednesday</h4></td>
-            <td><h4>10:00 - 16:00</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Thursday</h4></td>
-            <td><h4>10:00 - 16:00</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Friday</h4></td>
-            <td><h4>10:00 - 19:00</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Saturday</h4></td>
-            <td><h4>09:00 - 16:00</h4></td>
-          </tr>
-          <tr>
-            <td><h4>Sunday</h4></td>
-            <td><h4>09:00 - 13:00</h4></td>
-          </tr>
-        </table> -->
-        <div>
-          <p><span>Shop:</span> Same opening hours as the museum.</p>
-          <p><span>Café:</span> Same opening hours as the museum.</p>
-          <p>
-            <span>Public holidays:</span> The museum is closed on Christmas Eve,
-            Christmas Day, New Year's Eve, New Year's Day and May 17th.
-          </p>
-        </div>
-      </section>
-      <section>
-        <h2>Location</h2>
-        <p>Møllerparken 4</p>
-        <p>0459 Oslo</p>
-        <p>
-          The museum is located in Møllerparken, in the center of Oslo City.
-        </p>
-        <a href="https://maps.app.goo.gl/4vLJVMuyXKG7FvoQ9" target="_blank"
-          >View in Google Maps</a
-        >
-        <figure>
-          <img
-            src="assets/images/visit_location_806w.jpg"
-            alt="Zoomed in map pin pointing Møllerparken 4 in Oslo City."
-          />
-        </figure>
-      </section>
-      <section>
-        <h2>Good to know</h2>
-        <section>
-          <h3>Accessibility</h3>
-          <p>
-            The museum has wheelchair accessibility ramps. It also has audio
-            guides and braille display signs for the visually impaired.
-          </p>
         </section>
-        <section>
-          <h3>Food and Drink</h3>
-          <p>
-            There is a café attached to the museum where you can get light
-            lunches, soft drinks, coffee, snacks and more.
-          </p>
-        </section>
-        <section>
-          <h3>Shop</h3>
-          <p>
-            Our shop offers a range of memorabilia from the museum as well as
-            great gifts and activity packs that allow you to continue to explore
-            science even after you’ve left the museum.
-          </p>
-        </section>
-      </section>
+      </div>
     </main>
     <footer>
       <div class="footer__content container flex__column">
