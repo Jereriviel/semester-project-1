@@ -40,8 +40,7 @@
   justify-content: space-between;
 }
 
-.visit__opening-times-special span,
-.visit__location-section span {
+.visit__opening-times-special span {
   font-weight: 600;
 }
 

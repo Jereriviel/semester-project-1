@@ -11,7 +11,14 @@
   padding-bottom: 2rem;
 }
 
-.documents__heading-content {
+.documents__heading-content,
+.documents__privacy-section-content,
+.documents__terms-section-content {
+  max-width: 1200px;
+}
+
+.documents__heading-content,
+.documents__privacy-section-content {
   padding-bottom: 0rem;
 }
 
@@ -51,8 +58,6 @@
 }
 
 .documents__shortcuts {
-  font-size: var(--font-size-mobile-body-large);
-  font-weight: 600;
   gap: 1rem;
 }
 
@@ -70,9 +75,5 @@
   .documents__privacy-section,
   .documents__terms-section {
     font-size: var(--font-size-desktop-body-medium);
-  }
-
-  .documents__shortcuts {
-    font-size: var(--font-size-desktop-body-large);
   }
 }

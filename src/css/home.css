@@ -9,6 +9,10 @@
   font-size: var(--font-size-mobile-body-large);
 }
 
+.hero__home p {
+  max-width: 750px;
+}
+
 .hero__home-content {
   gap: 2rem;
 }
@@ -27,8 +31,8 @@
   gap: 0.5rem;
 }
 
-.home__information-section span {
-  font-weight: 600;
+.home__information-section-content a {
+  margin-top: 1rem;
 }
 
 .home__information-section-underlined a {
@@ -49,7 +53,6 @@
 }
 
 .home__special-events-section-content {
-  text-align: left;
   font-size: var(--font-size-mobile-body-small);
 }
 
@@ -118,14 +121,6 @@
     padding-bottom: 1rem;
   }
 
-  .home__information-section-content .button {
-    margin-top: 1rem;
-  }
-
-  .home__information-section-underlined a {
-    font-size: var(--font-size-desktop-body-medium);
-  }
-
   .home__special-events-section-content {
     font-size: var(--font-size-desktop-body-small);
   }
@@ -133,6 +128,10 @@
   .home__special-events-section section {
     gap: 0.5rem;
     line-height: 1.5;
+  }
+
+  .home__information-section-underlined a {
+    font-size: var(--font-size-desktop-body-medium);
   }
 
   .home__young-stars-club-section {

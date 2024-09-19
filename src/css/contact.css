@@ -54,12 +54,12 @@
   padding-bottom: 2rem;
 }
 
-.contact__administration a {
-  text-decoration: underline;
-}
-
 .contact__administration h5 {
   padding-bottom: 0.5rem;
+}
+
+.contact__administration a {
+  text-decoration: underline;
 }
 
 .contact__administration-content {
