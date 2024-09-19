@@ -98,7 +98,8 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
+section,
+article {
   scroll-margin-top: 3.5rem;
 }
 
@@ -260,6 +261,7 @@ nav {
   right: 0rem;
   top: 3.5rem;
   width: 50%;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .nav__links {
@@ -270,7 +272,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: left;
-  padding: 1.5rem;
+  padding: 1rem 1rem 1rem 2rem;
 }
 
 .nav__links a:hover {
