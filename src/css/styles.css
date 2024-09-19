@@ -83,10 +83,7 @@ h2 {
     font-size: var(--font-size-desktop-h5);
   }
 
-  h2,
-  h3,
-  h4,
-  h5 {
+  h2 {
     text-align: left;
   }
 
@@ -96,6 +93,14 @@ h2 {
 }
 
 /* || General Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 3.5rem;
+}
 
 .container {
   max-width: 1440px;
@@ -197,6 +202,10 @@ select {
 }
 
 @media (min-width: 600px) {
+  section {
+    scroll-margin-top: 5.75rem;
+  }
+
   .container {
     padding: var(--padding-desktop-content);
   }
@@ -224,6 +233,7 @@ header {
   background-color: var(--primary-color-dark);
   color: var(--neutral-color-light);
   top: 0;
+  position: sticky;
 }
 
 .header__content {
@@ -234,7 +244,7 @@ header {
 }
 
 .header__logo {
-  height: 2.25rem;
+  height: 2.5rem;
 }
 
 /* header .button__cta {
@@ -248,7 +258,8 @@ nav {
   color: var(--neutral-color-black);
   position: fixed;
   right: 0rem;
-  top: 3.25rem;
+  top: 3.5rem;
+  width: 50%;
 }
 
 .nav__links {
@@ -258,9 +269,8 @@ nav {
 .nav__links a {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 12rem;
-  padding: 1rem;
+  justify-content: left;
+  padding: 1.5rem;
 }
 
 .nav__links a:hover {
@@ -277,6 +287,17 @@ nav {
 
 #menu-checkbox:checked ~ nav {
   display: block;
+  opacity: 0;
+  animation: fadeIn 0.75s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 800px) {
