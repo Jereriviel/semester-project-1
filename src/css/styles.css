@@ -260,8 +260,9 @@ nav {
   position: fixed;
   right: 0rem;
   top: 3.5rem;
-  width: 50%;
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100vh;
+  /* box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); */
 }
 
 .nav__links {
@@ -272,7 +273,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: left;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1rem;
 }
 
 .nav__links a:hover {
@@ -289,16 +290,16 @@ nav {
 
 #menu-checkbox:checked ~ nav {
   display: block;
-  opacity: 0;
-  animation: fadeIn 0.75s forwards;
+  font-weight: 600;
+  right: -1000px;
+  animation-name: fly-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+@keyframes fly-in {
+  100% {
+    right: 0px;
   }
 }
 
@@ -328,6 +329,7 @@ nav {
     position: relative;
     right: auto;
     top: auto;
+    height: auto;
   }
 
   .nav__links {
