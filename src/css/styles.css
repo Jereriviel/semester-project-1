@@ -52,8 +52,7 @@ h5 {
   font-size: var(--font-size-mobile-h5);
 }
 
-h1,
-h2 {
+h1 {
   text-align: center;
 }
 
@@ -83,9 +82,9 @@ h2 {
     font-size: var(--font-size-desktop-h5);
   }
 
-  h2 {
+  /* h2 {
     text-align: left;
-  }
+  } */
 
   .lead-p {
     font-size: var(--font-size-desktop-body-large);
