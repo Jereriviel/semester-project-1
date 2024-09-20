@@ -76,10 +76,6 @@
 }
 
 @media (min-width: 600px) {
-  .contact__heading {
-    background-color: var(--neutral-color-light);
-  }
-
   .contact__details {
     font-size: var(--font-size-desktop-body-large);
     text-align: left;
