@@ -23,7 +23,22 @@
 }
 
 .visit__admission-section-content section,
-.visit__good-to-know-section-content section,
+.visit__good-to-know-section-content section {
+  gap: 2rem;
+}
+
+.visit__admission-section-content figure,
+.visit__good-to-know-section-content figure {
+  max-width: 2.5rem;
+}
+
+.visit__admission-section-content div,
+.visit__good-to-know-section-content div {
+  justify-content: center;
+}
+
+.visit__admission-section-content div,
+.visit__good-to-know-section-content div,
 .visit__admission-section-buttons,
 .visit__opening-times-special {
   gap: 1rem;
