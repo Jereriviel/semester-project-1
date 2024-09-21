@@ -189,8 +189,8 @@ article {
   display: block;
   position: relative;
   width: fit-content;
-  z-index: -1;
-  transform: translateZ(-1px);
+  /* z-index: -1;
+  transform: translateZ(-1px); */
 }
 
 .underlined::before {
@@ -278,7 +278,7 @@ nav {
   top: 3.5rem;
   width: 100%;
   height: 100vh;
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d; */
 }
 
 .nav__links a {
