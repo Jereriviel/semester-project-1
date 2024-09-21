@@ -112,6 +112,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 3rem;
+    align-items: flex-start;
   }
 
   .home__information-section-content div {
