@@ -191,7 +191,7 @@ textarea,
 select {
   font: inherit;
   font-size: var(--font-size-mobile-body-medium);
-  padding: 1rem 0rem 1rem 1rem;
+  padding: 1rem 0 1rem 1rem;
 }
 
 @media (min-width: 600px) {
@@ -250,7 +250,7 @@ nav {
   background-color: var(--neutral-color-light);
   color: var(--neutral-color-black);
   position: fixed;
-  right: 0rem;
+  right: 0;
   top: 3.5rem;
   width: 100%;
   height: 100vh;
@@ -355,6 +355,7 @@ nav {
     display: block;
     position: relative;
     overflow: hidden;
+    margin: 0;
   }
 
   .nav__links a::after {
