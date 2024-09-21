@@ -13,7 +13,7 @@
 .explore__kids-section-content,
 .explore__teachers-section-content,
 .explore__researchers-section-content {
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: var(--font-size-mobile-body-medium);
   line-height: 1.8;
 }

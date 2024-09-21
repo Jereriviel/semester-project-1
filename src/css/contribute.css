@@ -13,7 +13,7 @@
 .contribute__support-section-content,
 .contribute__volunteer-section-content,
 .contribute__internships-section-content {
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: var(--font-size-mobile-body-medium);
   line-height: 1.8;
 }

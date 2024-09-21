@@ -32,8 +32,7 @@
   max-width: 2.5rem;
 }
 
-.visit__admission-section-content div,
-.visit__good-to-know-section-content div {
+.visit__information-text {
   justify-content: center;
   gap: 0.5rem;
 }
@@ -78,11 +77,13 @@
 
   .visit__admission-section-buttons {
     flex-direction: row;
+    justify-content: left;
+    gap: 2rem;
   }
 
   .visit__admission-section-buttons a {
     flex-basis: 50%;
-    max-width: 400px;
+    max-width: 250px;
   }
 
   .visit__opening-times-table {

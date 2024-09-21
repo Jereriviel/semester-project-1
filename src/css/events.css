@@ -19,7 +19,7 @@
 .events__night-museum-section-content,
 .events__young-stars-club-section-content,
 .events__holiday-section-content {
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: var(--font-size-mobile-body-medium);
   line-height: 1.8;
 }
