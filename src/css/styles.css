@@ -295,6 +295,10 @@ header {
   display: none;
 } */
 
+.hamburger-icon {
+  cursor: pointer;
+}
+
 nav {
   display: none;
   font-size: var(--font-size-mobile-body-medium);
