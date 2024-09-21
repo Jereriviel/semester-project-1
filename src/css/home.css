@@ -27,28 +27,28 @@
   font-size: var(--font-size-mobile-body-medium);
 }
 
-.home__information-section section {
+.home__information-text {
   gap: 0.5rem;
 }
 
-.home__information-section-content a {
-  margin-top: 1rem;
+.home__information-underlined a {
+  text-decoration: underline;
 }
 
-.home__information-section-underlined a {
-  text-decoration: underline;
+.home__information-button {
+  margin-top: 0.5rem;
 }
 
 .home__special-events-section {
   background-color: var(--neutral-color-light);
 }
 
-.home__special-events-section section {
+.home__special-events-section-text {
   line-height: 1.8;
   gap: 0.5rem;
 }
 
-.home__special-events-section div {
+.home__special-events-gap {
   gap: 2rem;
 }
 
@@ -110,14 +110,15 @@
     font-size: var(--font-size-desktop-body-large);
     flex-direction: row;
     justify-content: space-between;
+    gap: 3rem;
   }
 
-  .home__information-section-content section {
+  .home__information-section-content div {
     align-items: left;
     text-align: left;
   }
 
-  .home__information-section-content section h3 {
+  .home__information-section-content div h3 {
     padding-bottom: 1rem;
   }
 
@@ -125,12 +126,12 @@
     font-size: var(--font-size-desktop-body-small);
   }
 
-  .home__special-events-section section {
+  .home__special-events-section-text {
     gap: 0.5rem;
     line-height: 1.5;
   }
 
-  .home__information-section-underlined a {
+  .home__information-underlined a {
     font-size: var(--font-size-desktop-body-medium);
   }
 
