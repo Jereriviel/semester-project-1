@@ -23,6 +23,7 @@
 
 .home__information-section-content {
   text-align: center;
+  align-items: center;
   gap: 2rem;
   font-size: var(--font-size-mobile-body-medium);
 }
@@ -31,8 +32,8 @@
   gap: 0.5rem;
 }
 
-.home__information-underlined a {
-  text-decoration: underline;
+.home__information-text-small {
+  font-size: var(--font-size-mobile-body-medium);
 }
 
 .home__information-button {
@@ -131,7 +132,7 @@
     line-height: 1.5;
   }
 
-  .home__information-underlined a {
+  .home__information-text-small {
     font-size: var(--font-size-desktop-body-medium);
   }
 
