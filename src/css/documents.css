@@ -66,14 +66,14 @@
   gap: 1rem;
 }
 
-.documents__shortcut a:hover {
-  text-decoration: underline;
-}
-
 @media (min-width: 600px) {
   .documents__heading,
   .documents__privacy-section,
   .documents__terms-section {
     font-size: var(--font-size-desktop-body-medium);
+  }
+
+  .documents__shortcut a::after {
+    background-color: var(--neutral-color-black);
   }
 }

@@ -189,8 +189,6 @@ article {
   display: block;
   position: relative;
   width: fit-content;
-  /* z-index: -1;
-  transform: translateZ(-1px); */
 }
 
 .underlined::before {
@@ -235,6 +233,34 @@ select {
     min-height: 400px;
   }
 
+  .underline-effect a {
+    width: fit-content;
+    padding: 0.25rem 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .underline-effect a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--neutral-color-light);
+    transition: opacity 300ms, transform 300ms;
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .underline-effect a:hover::after,
+  .underline-effect a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
   .button,
   input,
   button,
@@ -251,6 +277,7 @@ header {
   color: var(--neutral-color-light);
   top: 0;
   position: sticky;
+  z-index: 9999;
 }
 
 .header__content {
@@ -278,7 +305,6 @@ nav {
   top: 3.5rem;
   width: 100%;
   height: 100vh;
-  /* transform-style: preserve-3d; */
 }
 
 .nav__links a {
@@ -364,31 +390,7 @@ nav {
   }
 
   .nav__links a {
-    width: auto;
     padding: 0.25rem 0;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-  }
-
-  .nav__links a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.125rem;
-    background-color: var(--neutral-color-light);
-    transition: opacity 300ms, transform 300ms;
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  .nav__links a:hover::after,
-  .nav__links a:focus::after {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
   }
 
   .nav__links a:hover {
@@ -497,32 +499,6 @@ footer li {
     grid-row-start: 1;
     grid-row-end: 2;
     gap: 3rem;
-  }
-
-  .footer__links a {
-    display: block;
-    position: relative;
-    width: fit-content;
-    overflow: hidden;
-  }
-
-  .footer__links a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.125rem;
-    background-color: var(--neutral-color-light);
-    transition: opacity 300ms, transform 300ms;
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  .footer__links a:hover::after,
-  .footer__links a:focus::after {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
   }
 
   .footer__newsletter-social {
