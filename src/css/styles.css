@@ -120,6 +120,7 @@ article {
   width: auto;
   display: block;
   cursor: pointer;
+  transition: 0.6s ease;
 }
 
 .button__primary {
@@ -165,6 +166,7 @@ article {
 
 .card {
   background-color: var(--primary-color-light-hover);
+  transition: 0.6s ease;
 }
 
 .card__small {
