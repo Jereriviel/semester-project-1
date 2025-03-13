@@ -1,6 +1,6 @@
 # Semester Project 1
 
-![image](https://jereriviel.github.io/portfolio/assets/img/thumbnail_communitysciencemuseum.png)
+![image](https://jereriviel.github.io/portfolio/assets/img/thumbnail_communitysciencemuseum.webp)
 
 ## Description
 
